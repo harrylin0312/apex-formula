@@ -1,5 +1,9 @@
 # 給下一個對話的檢查交接
 
+## 後續驗證（2026-11-12）
+
+見 WIND_TUNNEL_VALIDATION.md 最後章節、tests/steering-validation.test.mjs 與 research/steering-v4-validation.json。Chrome 公開版手動加速／暫停／重設／三種視角已驗證。25% 方向的側滑與回正明顯改善；300 km/h 滿方向仍會大幅失控。另已確認風洞使用率未到 90% 時，即使 α 約 8°、滑速約 9 m/s 仍顯示抓地穩定；此判讀缺口尚未修改，勿誤報為所有動態已穩定。
+
 ## 最新轉向（steering-v4，2026-11-12）
 
 依使用者要求，steeringLimit 改為 `.58/(1+4*abs(speed)/42)`，速度項由 2 再加倍至 4。零速角度不變，100／200／300 km/h 滿輸入為 9.116°／5.282°／3.719°；玩家、AI、風洞共用。21 項物理測試及空力效果對照通過。WIND_TUNNEL_VALIDATION.md 為 5dc06bb 的歷史受測版本。
