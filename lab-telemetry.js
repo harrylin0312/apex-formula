@@ -1,4 +1,4 @@
-import {SURFACES} from './core.js?v=steering-4';
+import {SURFACES} from './core.js?v=brake-1';
 const degrees=180/Math.PI;
 const sum=(items,key)=>items.reduce((total,item)=>total+item[key],0);
 
@@ -11,7 +11,7 @@ export function sampleLabTelemetry(car){
     return{id:w.id,front:w.front,load:w.fz,mu:w.mu,effectiveMu:w.fz>0?(w.capacity||0)/w.fz:0,surface:SURFACES[w.surface]?.label||w.surface,
       usage:w.utilization,capacity:w.capacity||0,force:Math.hypot(w.fx,w.fy),fx:w.fx,fy:w.fy,demandRatio:w.demandRatio||0,
       slipRatio:w.slipRatio,slipAngle:w.slipAngle*degrees,slipSpeed:Math.hypot(w.slipSpeedLong||0,w.slipSpeedLateral||0),
-      angle:-w.steer*degrees,abs:!!w.absActive,tcs:!!w.tcsActive,locked:!!w.locked,
+      angle:-w.steer*degrees,brakeAid:!!w.brakeAssistActive,brakeHeadroom:w.brakeHeadroom||0,abs:!!w.absActive,tcs:!!w.tcsActive,locked:!!w.locked,
       spin:loaded&&!w.front&&w.slipRatio>.12&&(w.slipSpeedLong||0)>.8,sliding:longitudinal||lateral,lateralSliding:lateral};
   });
   function axle(front){
@@ -29,7 +29,7 @@ export function sampleLabTelemetry(car){
   const sliding=wheels.filter(w=>w.sliding),near=wheels.filter(w=>w.usage>=.9),total=front.load+rear.load;
   return{time:car.telemetry.elapsed||0,speed:car.speed*3.6,gas:car.throttle,brake:car.brake,steering:car.steeringInput||0,
     steeringTarget:-(car.steeringTarget||0)*degrees,steeringActual:-car.steer*degrees,
-    ers:car.ers,boost:!!car.telemetry.boost,assist:!!car.telemetry.assist,
+    ers:car.ers,boost:!!car.telemetry.boost,assist:!!car.telemetry.assist,friendlyBrake:!!car.telemetry.friendlyBrake,brakeAid:wheels.some(w=>w.brakeAid),
     downforce:car.telemetry.aero?.downforce||0,dragLong:car.telemetry.aero?.dragLong||0,dragLateral:car.telemetry.aero?.dragLateral||0,
     ax:car.telemetry.aero?.ax||0,ay:car.telemetry.aero?.ay||0,yaw:car.yaw*degrees,beta,wheels,front,rear,
     frontLoadShare:total>0?front.load/total:0,frontGripShare:front.capacity+rear.capacity>0?front.capacity/(front.capacity+rear.capacity):0,
