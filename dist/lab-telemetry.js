@@ -1,4 +1,4 @@
-import {SURFACES} from './core.js?v=lab-1';
+import {SURFACES} from './core.js?v=steering-4';
 const degrees=180/Math.PI;
 const sum=(items,key)=>items.reduce((total,item)=>total+item[key],0);
 

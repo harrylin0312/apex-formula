@@ -1,7 +1,7 @@
 {
   "model": "four-wheel-v1",
   "checks": [
-    "Speed-sensitive steering doubles the speed term while preserving low-speed lock",
+    "Speed-sensitive steering quadruples the original speed term while preserving low-speed lock",
     "Loaded tyres retain asphalt mu >=1.9 and off-track mu >=1",
     "Gravel uses base mu 1.2, load sensitivity and slip-reduced force capacity",
     "Right input turns to the camera-right at every cardinal heading",
@@ -31,15 +31,15 @@
       },
       {
         "kmh": 100,
-        "degrees": 14.307
-      },
-      {
-        "kmh": 200,
         "degrees": 9.116
       },
       {
+        "kmh": 200,
+        "degrees": 5.282
+      },
+      {
         "kmh": 300,
-        "degrees": 6.689
+        "degrees": 3.719
       }
     ],
     "gravel": [
@@ -188,8 +188,8 @@
       "maximumCentreOffset": 1.054
     },
     "timestepDifference": {
-      "speedPercent": 0.003,
-      "headingDegrees": 0.058
+      "speedPercent": 0.002,
+      "headingDegrees": 0.039
     }
   },
   "surfaces": {

@@ -1,5 +1,9 @@
 # 給下一個對話的檢查交接
 
+## 最新轉向（steering-v4，2026-11-12）
+
+依使用者要求，steeringLimit 改為 `.58/(1+4*abs(speed)/42)`，速度項由 2 再加倍至 4。零速角度不變，100／200／300 km/h 滿輸入為 9.116°／5.282°／3.719°；玩家、AI、風洞共用。21 項物理測試及空力效果對照通過。WIND_TUNNEL_VALIDATION.md 為 5dc06bb 的歷史受測版本。
+
 ## 風洞實驗室（lab-v1）
 
 入口在主選單；手動操作，沒有預設 scenario。drive 第五參數 LAB_ENVIRONMENT 僅更換為固定柏油／無賽道約束，原輪胎與空力公式不變。新增 telemetry.aero 與各輪接地速度、需求比例、實際介入旗標；lab-telemetry.js 產生唯讀快照及門檻判讀，詳見 WIND_TUNNEL_LAB.md。原比賽 21 項量測相同。面板需獨立處理 pointerId 拖曳，才能在另一根手指踩踏板時捲動。
