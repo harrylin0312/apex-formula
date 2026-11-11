@@ -55,3 +55,7 @@ Run `node tests/car-model.test.mjs` to check decompression, geometry dimensions,
 輪胎冒煙特效依各輪接地載重、抓地力使用率及滑動速度獨立觸發；鎖死、空轉與側滑會在對應輪胎接地點產生漸散煙霧。特效測試：`node tests/tyre-smoke.test.mjs`。
 
 手機控制與音效回歸檢查：`node tests/touch-controls.test.mjs`、`node tests/engine-audio.test.mjs`。已用 Chromium 真實多指事件驗證同時轉向／油門／煞車／ERS、額外手指、獨立放開、跨區拖曳、觸控取消與旋轉重設；Web Audio 解鎖、暫停後恢復、靜音及離線音訊輸出亦通過。實體 iPhone／Safari 音訊中斷與多點觸控仍待實機確認。引擎聲為程序合成，非 F1 實車錄音。
+
+## 風洞實驗室
+
+主選單「風洞實驗室」進入手動觀測。共用當前四輪物理，固定乾柏油、無邊界測試艙；即時觀察四輪載重、滑移、抓地力、空力與車身動態。沒有產品內的預設 scenario 或自動跑測試。資料定義、狀態門檻與限制見 [WIND_TUNNEL_LAB.md](WIND_TUNNEL_LAB.md)。

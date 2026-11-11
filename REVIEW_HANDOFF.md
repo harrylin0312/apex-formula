@@ -1,5 +1,9 @@
 # 給下一個對話的檢查交接
 
+## 風洞實驗室（lab-v1）
+
+入口在主選單；手動操作，沒有預設 scenario。drive 第五參數 LAB_ENVIRONMENT 僅更換為固定柏油／無賽道約束，原輪胎與空力公式不變。新增 telemetry.aero 與各輪接地速度、需求比例、實際介入旗標；lab-telemetry.js 產生唯讀快照及門檻判讀，詳見 WIND_TUNNEL_LAB.md。原比賽 21 項量測相同。面板需獨立處理 pointerId 拖曳，才能在另一根手指踩踏板時捲動。
+
 ## 多點觸控與引擎聲（controls-audio-v5）
 
 獨立模組 dist/touch-controls.js 追蹤每個控制區的 pointerId；非擁有者不能移動或解除輸入，旋轉／失焦時重設。dist/engine-audio.js 使用 Web Audio 合成 V6 燃燒脈衝、機械與進氣聲；以使用者手勢解鎖與恢復音訊，介面反映音訊實際狀態。Chromium 多指事件、音訊恢復與離線輸出通過；未宣稱實體 Safari 驗證。
