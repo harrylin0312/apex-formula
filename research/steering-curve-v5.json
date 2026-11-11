@@ -1,0 +1,1144 @@
+{
+  "pass": true,
+  "source": "steering-v5; baseline curve from 7754f35",
+  "conditions": "LAB_ENVIRONMENT; 0.3s steering pulse then 2.7s release; no throttle; brake if selected applied for first 1s; friendly brake on; ABS/TCS off; no forced speed or yaw after initialization",
+  "angles": [
+    {
+      "kmh": 0,
+      "previous": 33.231552117587746,
+      "current": 33.231552117587746
+    },
+    {
+      "kmh": 40,
+      "previous": 16.145921208802275,
+      "current": 16.145921208802275
+    },
+    {
+      "kmh": 50,
+      "previous": 14.306978018733677,
+      "current": 14.306978018733677
+    },
+    {
+      "kmh": 60,
+      "previous": 12.844096830724098,
+      "current": 12.844096830724098
+    },
+    {
+      "kmh": 70,
+      "previous": 11.652622171102196,
+      "current": 10.794056859490865
+    },
+    {
+      "kmh": 80,
+      "previous": 10.663435229582486,
+      "current": 8.744016888257637
+    },
+    {
+      "kmh": 100,
+      "previous": 9.115766836319425,
+      "current": 6.563352122149986
+    },
+    {
+      "kmh": 150,
+      "previous": 6.688778860728524,
+      "current": 5.083471934153678
+    },
+    {
+      "kmh": 200,
+      "previous": 5.282391379498809,
+      "current": 4.490032672573987
+    },
+    {
+      "kmh": 250,
+      "previous": 4.364672237820767,
+      "current": 4.364672237820767
+    },
+    {
+      "kmh": 300,
+      "previous": 3.718628389712306,
+      "current": 3.718628389712306
+    }
+  ],
+  "runs": [
+    {
+      "version": "previous",
+      "kmh": 50,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 0.5473882354233843,
+      "lockedWheelSamples": 0,
+      "finalYaw": -3.1571289626616355e-15,
+      "finalSpeed": 46.89498651992085
+    },
+    {
+      "version": "previous",
+      "kmh": 50,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 1.1057958798845096,
+      "lockedWheelSamples": 0,
+      "finalYaw": 0,
+      "finalSpeed": 0
+    },
+    {
+      "version": "previous",
+      "kmh": 50,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 1.055683448662371,
+      "lockedWheelSamples": 0,
+      "finalYaw": -6.331257790915233e-15,
+      "finalSpeed": 46.735306641316825
+    },
+    {
+      "version": "previous",
+      "kmh": 50,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 2.1631351768421783,
+      "lockedWheelSamples": 0,
+      "finalYaw": -2.8334783329396786e-17,
+      "finalSpeed": 0.29194686334844855
+    },
+    {
+      "version": "previous",
+      "kmh": 50,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 1.8688925593278995,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.2515175878189645e-14,
+      "finalSpeed": 46.08544286461693
+    },
+    {
+      "version": "previous",
+      "kmh": 50,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 3.9357520258855403,
+      "lockedWheelSamples": 0,
+      "finalYaw": -8.693360435100213e-17,
+      "finalSpeed": 0.450087519292112
+    },
+    {
+      "version": "previous",
+      "kmh": 60,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 0.2610352581096038,
+      "lockedWheelSamples": 0,
+      "finalYaw": -2.0487294946736216e-15,
+      "finalSpeed": 56.1537763212702
+    },
+    {
+      "version": "previous",
+      "kmh": 60,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 0.6332860037660124,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.956168348465397e-16,
+      "finalSpeed": 4.507750402028608
+    },
+    {
+      "version": "previous",
+      "kmh": 60,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 0.5075031416451506,
+      "lockedWheelSamples": 0,
+      "finalYaw": -4.237946594263439e-15,
+      "finalSpeed": 55.94063688797355
+    },
+    {
+      "version": "previous",
+      "kmh": 60,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 1.2017199218702999,
+      "lockedWheelSamples": 0,
+      "finalYaw": -4.246568002919205e-16,
+      "finalSpeed": 4.905436322597381
+    },
+    {
+      "version": "previous",
+      "kmh": 60,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 1.0518426874129354,
+      "lockedWheelSamples": 0,
+      "finalYaw": -9.642222697391812e-15,
+      "finalSpeed": 55.08835031268218
+    },
+    {
+      "version": "previous",
+      "kmh": 60,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 1.9226216085438677,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.0945645816887778e-15,
+      "finalSpeed": 6.34959318005079
+    },
+    {
+      "version": "previous",
+      "kmh": 70,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 0.4086335296450069,
+      "lockedWheelSamples": 0,
+      "finalYaw": 2.4897649155548054e-14,
+      "finalSpeed": 65.28525662493088
+    },
+    {
+      "version": "previous",
+      "kmh": 70,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 0.24332288993170553,
+      "lockedWheelSamples": 0,
+      "finalYaw": -5.5859203601103e-16,
+      "finalSpeed": 13.373279770543284
+    },
+    {
+      "version": "previous",
+      "kmh": 70,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 0.8960522165553377,
+      "lockedWheelSamples": 0,
+      "finalYaw": 4.770026718690644e-14,
+      "finalSpeed": 65.00990349787665
+    },
+    {
+      "version": "previous",
+      "kmh": 70,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 0.4153889460826456,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.1717806796965749e-15,
+      "finalSpeed": 13.863319113489396
+    },
+    {
+      "version": "previous",
+      "kmh": 70,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 2.362302552723379,
+      "lockedWheelSamples": 0,
+      "finalYaw": 8.237474388596478e-14,
+      "finalSpeed": 63.907188026120124
+    },
+    {
+      "version": "previous",
+      "kmh": 70,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 0.6902368869074385,
+      "lockedWheelSamples": 0,
+      "finalYaw": -2.6490669319888694e-15,
+      "finalSpeed": 15.620370794431613
+    },
+    {
+      "version": "previous",
+      "kmh": 80,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 0.6539012019433904,
+      "lockedWheelSamples": 0,
+      "finalYaw": 2.321390164727501e-13,
+      "finalSpeed": 74.29221038016823
+    },
+    {
+      "version": "previous",
+      "kmh": 80,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 0.24347187539211806,
+      "lockedWheelSamples": 0,
+      "finalYaw": -9.15082539586243e-16,
+      "finalSpeed": 21.931197489419134
+    },
+    {
+      "version": "previous",
+      "kmh": 80,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 1.4189097139395621,
+      "lockedWheelSamples": 0,
+      "finalYaw": 4.640570396058576e-13,
+      "finalSpeed": 73.9459823684586
+    },
+    {
+      "version": "previous",
+      "kmh": 80,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 0.5706704598428388,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.9008333907680184e-15,
+      "finalSpeed": 22.522389112221173
+    },
+    {
+      "version": "previous",
+      "kmh": 80,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 3.5833827508169414,
+      "lockedWheelSamples": 0,
+      "finalYaw": 9.893308718047145e-13,
+      "finalSpeed": 72.52657078144175
+    },
+    {
+      "version": "previous",
+      "kmh": 80,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 1.766278040882676,
+      "lockedWheelSamples": 0,
+      "finalYaw": -4.246663408012147e-15,
+      "finalSpeed": 24.66450538422356
+    },
+    {
+      "version": "previous",
+      "kmh": 100,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 1.0653137341971926,
+      "lockedWheelSamples": 0,
+      "finalYaw": -6.310349420339991e-13,
+      "finalSpeed": 91.94353689895462
+    },
+    {
+      "version": "previous",
+      "kmh": 100,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 0.7620407797207236,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.7396011562530625e-15,
+      "finalSpeed": 38.165946930414485
+    },
+    {
+      "version": "previous",
+      "kmh": 100,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 2.2955512136817626,
+      "lockedWheelSamples": 0,
+      "finalYaw": -7.556869075480436e-13,
+      "finalSpeed": 91.43072910527675
+    },
+    {
+      "version": "previous",
+      "kmh": 100,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 1.6524296521869113,
+      "lockedWheelSamples": 0,
+      "finalYaw": -3.628364188388809e-15,
+      "finalSpeed": 39.01123543739839
+    },
+    {
+      "version": "previous",
+      "kmh": 100,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 5.719901174446176,
+      "lockedWheelSamples": 0,
+      "finalYaw": 5.5398365817966915e-12,
+      "finalSpeed": 89.07531773522028
+    },
+    {
+      "version": "previous",
+      "kmh": 100,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 4.216460031276654,
+      "lockedWheelSamples": 0,
+      "finalYaw": -9.117872776954774e-15,
+      "finalSpeed": 42.29858653528577
+    },
+    {
+      "version": "previous",
+      "kmh": 150,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 1.699579956037773,
+      "lockedWheelSamples": 0,
+      "finalYaw": -2.0071205544982075e-9,
+      "finalSpeed": 134.07604822511917
+    },
+    {
+      "version": "previous",
+      "kmh": 150,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 1.8623326460823282,
+      "lockedWheelSamples": 0,
+      "finalYaw": -3.98804520307571e-12,
+      "finalSpeed": 75.22848992692047
+    },
+    {
+      "version": "previous",
+      "kmh": 150,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 3.6894620360615966,
+      "lockedWheelSamples": 0,
+      "finalYaw": -4.926448762192993e-9,
+      "finalSpeed": 133.0228795088772
+    },
+    {
+      "version": "previous",
+      "kmh": 150,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 3.8579197454513454,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.0862252003138998e-11,
+      "finalSpeed": 77.44776273533458
+    },
+    {
+      "version": "previous",
+      "kmh": 150,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 10.777406061343246,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.3594604667684296e-7,
+      "finalSpeed": 122.79248915587141
+    },
+    {
+      "version": "previous",
+      "kmh": 150,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 11.981090991446264,
+      "lockedWheelSamples": 0,
+      "finalYaw": 5.016440998441296e-10,
+      "finalSpeed": 89.84019022003129
+    },
+    {
+      "version": "previous",
+      "kmh": 200,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 2.01949674443478,
+      "lockedWheelSamples": 0,
+      "finalYaw": -2.2932289688846215e-8,
+      "finalSpeed": 173.58517911115015
+    },
+    {
+      "version": "previous",
+      "kmh": 200,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 3.692620915877659,
+      "lockedWheelSamples": 0,
+      "finalYaw": -3.1276009848312874e-9,
+      "finalSpeed": 114.29407131167301
+    },
+    {
+      "version": "previous",
+      "kmh": 200,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 4.451293245933636,
+      "lockedWheelSamples": 0,
+      "finalYaw": -6.63923143305477e-8,
+      "finalSpeed": 171.8681776162913
+    },
+    {
+      "version": "previous",
+      "kmh": 200,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 7.659828317077051,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.643791177609298e-8,
+      "finalSpeed": 119.24601272479235
+    },
+    {
+      "version": "previous",
+      "kmh": 200,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 37.27832610472723,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.553169332363721,
+      "finalSpeed": 68.57041077843714
+    },
+    {
+      "version": "previous",
+      "kmh": 200,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 97.96874035362312,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.0000665586551813668,
+      "finalSpeed": 1.9250788728691983
+    },
+    {
+      "version": "previous",
+      "kmh": 250,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 2.1847729197519965,
+      "lockedWheelSamples": 0,
+      "finalYaw": -6.655510492439318e-8,
+      "finalSpeed": 210.72010830946968
+    },
+    {
+      "version": "previous",
+      "kmh": 250,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 5.865118171263934,
+      "lockedWheelSamples": 0,
+      "finalYaw": -5.326618426754717e-7,
+      "finalSpeed": 153.29071207482525
+    },
+    {
+      "version": "previous",
+      "kmh": 250,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 4.886567562103844,
+      "lockedWheelSamples": 0,
+      "finalYaw": -2.2052123635234292e-7,
+      "finalSpeed": 208.28370301798205
+    },
+    {
+      "version": "previous",
+      "kmh": 250,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 56.945636964750314,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.4489268170940613,
+      "finalSpeed": 43.9807524682323
+    },
+    {
+      "version": "previous",
+      "kmh": 250,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 51.54421339545714,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.3484260789793961,
+      "finalSpeed": 63.094608267037785
+    },
+    {
+      "version": "previous",
+      "kmh": 250,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 177.41000115231017,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.0399883611531828,
+      "finalSpeed": 18.326466253635928
+    },
+    {
+      "version": "previous",
+      "kmh": 300,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 2.26517379145805,
+      "lockedWheelSamples": 0,
+      "finalYaw": -9.970281378680525e-8,
+      "finalSpeed": 245.69725767121844
+    },
+    {
+      "version": "previous",
+      "kmh": 300,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 11.636176521445035,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.0006334972943665867,
+      "finalSpeed": 168.0813386486052
+    },
+    {
+      "version": "previous",
+      "kmh": 300,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 5.124859966264649,
+      "lockedWheelSamples": 0,
+      "finalYaw": -3.6706846705129787e-7,
+      "finalSpeed": 242.554972500265
+    },
+    {
+      "version": "previous",
+      "kmh": 300,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 75.80839799923078,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.21340443399025452,
+      "finalSpeed": 35.96995639202092
+    },
+    {
+      "version": "previous",
+      "kmh": 300,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 56.58159769057701,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.2247387429877956,
+      "finalSpeed": 69.50490951562317
+    },
+    {
+      "version": "previous",
+      "kmh": 300,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 112.68894807905484,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.10793553068571875,
+      "finalSpeed": 18.460971074245332
+    },
+    {
+      "version": "current",
+      "kmh": 50,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 0.5473882354233843,
+      "lockedWheelSamples": 0,
+      "finalYaw": -3.1571289626616355e-15,
+      "finalSpeed": 46.89498651992085
+    },
+    {
+      "version": "current",
+      "kmh": 50,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 1.1057958798845096,
+      "lockedWheelSamples": 0,
+      "finalYaw": 0,
+      "finalSpeed": 0
+    },
+    {
+      "version": "current",
+      "kmh": 50,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 1.055683448662371,
+      "lockedWheelSamples": 0,
+      "finalYaw": -6.331257790915233e-15,
+      "finalSpeed": 46.735306641316825
+    },
+    {
+      "version": "current",
+      "kmh": 50,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 2.1631351768421783,
+      "lockedWheelSamples": 0,
+      "finalYaw": -2.8334783329396786e-17,
+      "finalSpeed": 0.29194686334844855
+    },
+    {
+      "version": "current",
+      "kmh": 50,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 1.8688925593278995,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.2515175878189645e-14,
+      "finalSpeed": 46.08544286461693
+    },
+    {
+      "version": "current",
+      "kmh": 50,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 3.9357520258855403,
+      "lockedWheelSamples": 0,
+      "finalYaw": -8.693360435100213e-17,
+      "finalSpeed": 0.450087519292112
+    },
+    {
+      "version": "current",
+      "kmh": 60,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 0.2610352581096038,
+      "lockedWheelSamples": 0,
+      "finalYaw": -2.0487294946736216e-15,
+      "finalSpeed": 56.1537763212702
+    },
+    {
+      "version": "current",
+      "kmh": 60,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 0.6332860037660124,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.956168348465397e-16,
+      "finalSpeed": 4.507750402028608
+    },
+    {
+      "version": "current",
+      "kmh": 60,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 0.5075031416451506,
+      "lockedWheelSamples": 0,
+      "finalYaw": -4.237946594263439e-15,
+      "finalSpeed": 55.94063688797355
+    },
+    {
+      "version": "current",
+      "kmh": 60,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 1.2017199218702999,
+      "lockedWheelSamples": 0,
+      "finalYaw": -4.246568002919205e-16,
+      "finalSpeed": 4.905436322597381
+    },
+    {
+      "version": "current",
+      "kmh": 60,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 1.0518426874129354,
+      "lockedWheelSamples": 0,
+      "finalYaw": -9.642222697391812e-15,
+      "finalSpeed": 55.08835031268218
+    },
+    {
+      "version": "current",
+      "kmh": 60,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 1.9226216085438677,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.0945645816887778e-15,
+      "finalSpeed": 6.34959318005079
+    },
+    {
+      "version": "current",
+      "kmh": 70,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 0.37894469210799575,
+      "lockedWheelSamples": 0,
+      "finalYaw": 2.3242006012835763e-14,
+      "finalSpeed": 65.29743463481911
+    },
+    {
+      "version": "current",
+      "kmh": 70,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 0.24588105090163903,
+      "lockedWheelSamples": 0,
+      "finalYaw": -5.589613676783588e-16,
+      "finalSpeed": 13.369698448652777
+    },
+    {
+      "version": "current",
+      "kmh": 70,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 0.8227685646560856,
+      "lockedWheelSamples": 0,
+      "finalYaw": 4.4882486275842754e-14,
+      "finalSpeed": 65.0582956409899
+    },
+    {
+      "version": "current",
+      "kmh": 70,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 0.4223571008089472,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.1844850441162097e-15,
+      "finalSpeed": 13.849780920110806
+    },
+    {
+      "version": "current",
+      "kmh": 70,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 2.136340385933512,
+      "lockedWheelSamples": 0,
+      "finalYaw": 7.926708926315399e-14,
+      "finalSpeed": 64.08655637550815
+    },
+    {
+      "version": "current",
+      "kmh": 70,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 0.6861401005111759,
+      "lockedWheelSamples": 0,
+      "finalYaw": -2.6438973648344433e-15,
+      "finalSpeed": 15.570212899489421
+    },
+    {
+      "version": "current",
+      "kmh": 80,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 0.5299075355251098,
+      "lockedWheelSamples": 0,
+      "finalYaw": 1.898908437621607e-13,
+      "finalSpeed": 74.32995551008716
+    },
+    {
+      "version": "current",
+      "kmh": 80,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 0.21448326466447726,
+      "lockedWheelSamples": 0,
+      "finalYaw": -9.218874733379872e-16,
+      "finalSpeed": 21.893335073771716
+    },
+    {
+      "version": "current",
+      "kmh": 80,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 1.1205787843166433,
+      "lockedWheelSamples": 0,
+      "finalYaw": 3.7900830482511536e-13,
+      "finalSpeed": 74.0994682539195
+    },
+    {
+      "version": "current",
+      "kmh": 80,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 0.49039549347010836,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.8225716900362486e-15,
+      "finalSpeed": 22.378697529384578
+    },
+    {
+      "version": "current",
+      "kmh": 80,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 2.689789744427279,
+      "lockedWheelSamples": 0,
+      "finalYaw": 7.751282137164704e-13,
+      "finalSpeed": 73.15713861871555
+    },
+    {
+      "version": "current",
+      "kmh": 80,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 1.4374025899151643,
+      "lockedWheelSamples": 0,
+      "finalYaw": -3.984230268993414e-15,
+      "finalSpeed": 24.13092119026464
+    },
+    {
+      "version": "current",
+      "kmh": 100,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 0.7551451263179337,
+      "lockedWheelSamples": 0,
+      "finalYaw": -4.805830085511635e-13,
+      "finalSpeed": 92.02393470883695
+    },
+    {
+      "version": "current",
+      "kmh": 100,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 0.5826890664449568,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.3786192561785075e-15,
+      "finalSpeed": 38.051456113511115
+    },
+    {
+      "version": "current",
+      "kmh": 100,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 1.5724502404541876,
+      "lockedWheelSamples": 0,
+      "finalYaw": -7.812169494103027e-13,
+      "finalSpeed": 91.76483924720982
+    },
+    {
+      "version": "current",
+      "kmh": 100,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 1.22031230070943,
+      "lockedWheelSamples": 0,
+      "finalYaw": -2.865436506174227e-15,
+      "finalSpeed": 38.55306168881335
+    },
+    {
+      "version": "current",
+      "kmh": 100,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 3.607781789174977,
+      "lockedWheelSamples": 0,
+      "finalYaw": 1.539453401237085e-13,
+      "finalSpeed": 90.65857827678639
+    },
+    {
+      "version": "current",
+      "kmh": 100,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 2.8824832713555866,
+      "lockedWheelSamples": 0,
+      "finalYaw": -6.400159028020395e-15,
+      "finalSpeed": 40.51793330724426
+    },
+    {
+      "version": "current",
+      "kmh": 150,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 1.2711920247331123,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.483273588644557e-9,
+      "finalSpeed": 134.2121625913253
+    },
+    {
+      "version": "current",
+      "kmh": 150,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 1.3934363090329693,
+      "lockedWheelSamples": 0,
+      "finalYaw": -2.7846129617489013e-12,
+      "finalSpeed": 74.803172812712
+    },
+    {
+      "version": "current",
+      "kmh": 150,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 2.664654572595888,
+      "lockedWheelSamples": 0,
+      "finalYaw": -3.2767421944091382e-9,
+      "finalSpeed": 133.64618491632405
+    },
+    {
+      "version": "current",
+      "kmh": 150,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 2.807463001487628,
+      "lockedWheelSamples": 0,
+      "finalYaw": -6.896773891460005e-12,
+      "finalSpeed": 76.22185944702946
+    },
+    {
+      "version": "current",
+      "kmh": 150,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 6.433766816423036,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.3707037966354576e-8,
+      "finalSpeed": 130.53968525835012
+    },
+    {
+      "version": "current",
+      "kmh": 150,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 6.419384514028487,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.61837213571954e-11,
+      "finalSpeed": 81.02061616651577
+    },
+    {
+      "version": "current",
+      "kmh": 200,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 1.6911017239296637,
+      "lockedWheelSamples": 0,
+      "finalYaw": -1.884612721418741e-8,
+      "finalSpeed": 173.7243095428785
+    },
+    {
+      "version": "current",
+      "kmh": 200,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 3.1054073833250904,
+      "lockedWheelSamples": 0,
+      "finalYaw": -2.464083582468479e-9,
+      "finalSpeed": 113.4198102829686
+    },
+    {
+      "version": "current",
+      "kmh": 200,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 3.6198329929673383,
+      "lockedWheelSamples": 0,
+      "finalYaw": -4.7553717055710385e-8,
+      "finalSpeed": 172.58833427315506
+    },
+    {
+      "version": "current",
+      "kmh": 200,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 6.055874403087256,
+      "lockedWheelSamples": 0,
+      "finalYaw": -7.484145152736565e-9,
+      "finalSpeed": 117.31551948639975
+    },
+    {
+      "version": "current",
+      "kmh": 200,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 10.862029855509066,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.000003367534115566116,
+      "finalSpeed": 158.1013470511339
+    },
+    {
+      "version": "current",
+      "kmh": 200,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 60.21058381291624,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.5658986512433966,
+      "finalSpeed": 17.530536980708717
+    },
+    {
+      "version": "current",
+      "kmh": 250,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 2.166590161881803,
+      "lockedWheelSamples": 0,
+      "finalYaw": -6.579602235330009e-8,
+      "finalSpeed": 210.73009573161534
+    },
+    {
+      "version": "current",
+      "kmh": 250,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 5.63325208270605,
+      "lockedWheelSamples": 0,
+      "finalYaw": -5.139887940156339e-7,
+      "finalSpeed": 153.1180488837552
+    },
+    {
+      "version": "current",
+      "kmh": 250,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 4.8348084812834005,
+      "lockedWheelSamples": 0,
+      "finalYaw": -2.1518362065144566e-7,
+      "finalSpeed": 208.3475753490603
+    },
+    {
+      "version": "current",
+      "kmh": 250,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 53.18793993978458,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.4766668976154503,
+      "finalSpeed": 49.86844611578624
+    },
+    {
+      "version": "current",
+      "kmh": 250,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 51.0163206773396,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.3540016151202151,
+      "finalSpeed": 64.22762303750052
+    },
+    {
+      "version": "current",
+      "kmh": 250,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 174.69341798112987,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.1225094706995113,
+      "finalSpeed": 16.585092281266753
+    },
+    {
+      "version": "current",
+      "kmh": 300,
+      "steer": 0.25,
+      "brake": 0,
+      "maximumBetaDegrees": 2.26517379145805,
+      "lockedWheelSamples": 0,
+      "finalYaw": -9.970281378680525e-8,
+      "finalSpeed": 245.69725767121844
+    },
+    {
+      "version": "current",
+      "kmh": 300,
+      "steer": 0.25,
+      "brake": 0.9,
+      "maximumBetaDegrees": 11.63617652144495,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.000633497294366557,
+      "finalSpeed": 168.08133864860568
+    },
+    {
+      "version": "current",
+      "kmh": 300,
+      "steer": 0.5,
+      "brake": 0,
+      "maximumBetaDegrees": 5.124859966264649,
+      "lockedWheelSamples": 0,
+      "finalYaw": -3.6706846705129787e-7,
+      "finalSpeed": 242.554972500265
+    },
+    {
+      "version": "current",
+      "kmh": 300,
+      "steer": 0.5,
+      "brake": 0.9,
+      "maximumBetaDegrees": 75.80839799923078,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.21340443399025452,
+      "finalSpeed": 35.96995639202092
+    },
+    {
+      "version": "current",
+      "kmh": 300,
+      "steer": 1,
+      "brake": 0,
+      "maximumBetaDegrees": 56.58159769057701,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.2247387429877956,
+      "finalSpeed": 69.50490951562317
+    },
+    {
+      "version": "current",
+      "kmh": 300,
+      "steer": 1,
+      "brake": 0.9,
+      "maximumBetaDegrees": 112.68894807905484,
+      "lockedWheelSamples": 0,
+      "finalYaw": -0.10793553068571875,
+      "finalSpeed": 18.460971074245332
+    }
+  ]
+}

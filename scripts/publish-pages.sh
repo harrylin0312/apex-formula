@@ -12,6 +12,8 @@ node --check dist/lab-panel.js
 node --check dist/lab-scene.js
 node tests/lab.test.mjs
 node tests/friendly-brake.test.mjs >/dev/null
+node tests/steering-curve.test.mjs >/dev/null
+node tests/low-speed-corners.test.mjs >/dev/null
 node --check dist/touch-controls.js
 node --check dist/engine-audio.js
 node tests/touch-controls.test.mjs

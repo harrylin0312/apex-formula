@@ -1,5 +1,9 @@
 # 給下一個對話的檢查交接
 
+## 現行轉向 steering-v5
+
+見 PHYSICS_REPORT.md 最前面的分段轉向章節。60以下保留原速度對應低速角，60–250額外限制，100／150／200角度乘0.72／0.76／0.85，250以上維持v4。單調連續，不直接改偏航或μ。tests/steering-curve.test.mjs及research/steering-curve-v5.json有108組新舊對照；22項回歸、友善煞車與50–70低速彎仍通過。下面舊版研究均是各自受測版本的歷史資料。
+
 ## 低速彎研究（2026-11-12）
 
 見 LOW_SPEED_CORNER_STUDY.md、tests/low-speed-corners.test.mjs 與 research/low-speed-corner-validation.json。7754f35 原參數，玩家預設友善煞車開／ABS關；六個最緊彎均通過50／60／70 km/h，T3 18m 80km/h 明顯推寬、90失敗。含六組150／200km/h提前120m煞入T3測試。只有工程控制器驗證，不是實機手動或真實F1幾何複製。本次未改遊戲參數。
