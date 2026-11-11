@@ -13,3 +13,6 @@
 - 物理參數或結果變動後，同步更新 PHYSICS_REPORT.md、dist/physics-report.html 與 dist/physics-results.json。清楚分開模型測試與實車校準。
 - GitHub Pages 使用 gh-pages 分支根目錄，其內容由 main 的 dist/ 透過 git subtree split 產生。獲准發布後執行 sh scripts/publish-pages.sh；不要手動修改 gh-pages，也不要強制覆蓋遠端。
 - .openai/hosting.json 是既有 Sites 的歷史發布識別，無登入憑證。GitHub Pages 發布不使用它；不可宣稱兩個網站自動同步。
+
+- 車模為 CarlosCG31 的 Formula F226（CC BY 4.0）；來源與授權見 ASSET_CREDITS.md，保留遊戲內的作者標示。dist/assets/formula-f226.glb、來源指紋與所需解碼器皆為可發布素材。
+- 變更車模或載入流程後，執行 node tests/car-model.test.mjs；不要處置仍被其他車輛共用的模板幾何。

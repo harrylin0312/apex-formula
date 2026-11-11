@@ -43,3 +43,11 @@ Optional Google Fonts have system-font fallbacks. Original game and assets; no o
 ## GitHub Pages publication
 
 The `main` branch contains the complete editable source and tests. The `gh-pages` branch is derived from `main:dist` with `git subtree split`. After committing an authorized update, run `sh scripts/publish-pages.sh`, then check the Pages build status. This does not update the historical Sites deployment.
+
+## Complete 3D car model
+
+The car is now the downloaded **Formula F226** by **CarlosCG31** (CC BY 4.0), using the 73,052-triangle, 529,804-byte web-optimized GLB distributed by BadCodesGG / interactive-f1. Source links, changes and licensing are in [ASSET_CREDITS.md](ASSET_CREDITS.md) and [the in-game credits page](https://harrylin0312.github.io/apex-formula/asset-credits.html).
+
+`dist/car-model.js` loads bundled glTF/Meshopt tools, expands quantized attributes, corrects mirrored winding, shares merged static geometry, aligns four independently animated wheels to physical contacts, applies APEX paint/decals and supplies fixed camera mounts. The physics core and parameters are unchanged. The cockpit eye is fitted to the downloaded model; the vehicle model does not define collision geometry or grip.
+
+Run `node tests/car-model.test.mjs` to check decompression, geometry dimensions, wheel alignment, cockpit sightline and shared resources. Model assets and decoders are self-hosted; play does not require access to Sketchfab, GitHub raw or a model CDN. Physical phone performance remains unverified.

@@ -1,0 +1,16 @@
+{
+  "title": "Formula F226",
+  "author": "CarlosCG31",
+  "authorUrl": "https://sketchfab.com/CarlosCG31",
+  "source": "https://sketchfab.com/3d-models/formula-f226-a4dd03155ab64a6a9b7c677af189c1a1",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "optimizedBy": "BadCodesGG",
+  "optimizedSource": "https://github.com/BadCodesGG/interactive-f1",
+  "optimizedSourceCommit": "a1fdae07d315c0fa5a63296c00d28978173b49d8",
+  "optimizedAssetPath": "public/models/f226.f3ba7133.glb",
+  "sha256": "f3ba7133850222a50f2301698ff830fcb5a4a77b48de97243718e62df6a94e29",
+  "bytes": 529804,
+  "triangles": 73052,
+  "modifications": "Runtime coordinate conversion and wheel contact alignment; grouped static geometry; APEX vertex-color livery, materials and projected decals; separately animated wheels; added generic driver. No BadCodes logos/textures included."
+}
