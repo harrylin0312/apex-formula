@@ -1,0 +1,151 @@
+{
+  "sourceCommit": "711fa086d8ffdde956d89069988e1c480a858f95",
+  "conditions": "Uniform asphalt; walls removed; no ABS/TCS; 15% throttle; 0.3-second steering pulse followed by 0.7-second release; 120 Hz chassis / 240 Hz tyre integration",
+  "runs": [
+    {
+      "kph": 100,
+      "command": 0.05,
+      "wheelAngleLimitDegrees": 1.0001215525834528,
+      "maxSideslipDegrees": 0.43749313950510554,
+      "maxYawRate": 0.12630406439211683,
+      "finalYawRate": 0.00011876903928179487
+    },
+    {
+      "kph": 100,
+      "command": 0.1,
+      "wheelAngleLimitDegrees": 2.0002431051669056,
+      "maxSideslipDegrees": 0.8887120336047286,
+      "maxYawRate": 0.2511007665246074,
+      "finalYawRate": 0.0002470434272070331
+    },
+    {
+      "kph": 100,
+      "command": 0.25,
+      "wheelAngleLimitDegrees": 5.000607762917264,
+      "maxSideslipDegrees": 2.450568672729845,
+      "maxYawRate": 0.5996849600859692,
+      "finalYawRate": 0.0008246931460317827
+    },
+    {
+      "kph": 100,
+      "command": 1,
+      "wheelAngleLimitDegrees": 20.002431051669056,
+      "maxSideslipDegrees": 11.641318539165662,
+      "maxYawRate": 1.1781081543033303,
+      "finalYawRate": -0.30765688926895224
+    },
+    {
+      "kph": 200,
+      "command": 0.05,
+      "wheelAngleLimitDegrees": 0.7153489009366839,
+      "maxSideslipDegrees": 1.0280334379910605,
+      "maxYawRate": 0.17904368655984057,
+      "finalYawRate": -0.00007275976910570114
+    },
+    {
+      "kph": 200,
+      "command": 0.1,
+      "wheelAngleLimitDegrees": 1.4306978018733678,
+      "maxSideslipDegrees": 2.1221852318172916,
+      "maxYawRate": 0.35406482460848787,
+      "finalYawRate": -0.00014947107343762575
+    },
+    {
+      "kph": 200,
+      "command": 0.25,
+      "wheelAngleLimitDegrees": 3.576744504683419,
+      "maxSideslipDegrees": 6.7684156034034855,
+      "maxYawRate": 0.8135676291155184,
+      "finalYawRate": -0.0177537128095304
+    },
+    {
+      "kph": 200,
+      "command": 1,
+      "wheelAngleLimitDegrees": 14.306978018733677,
+      "maxSideslipDegrees": 46.194542338672456,
+      "maxYawRate": 1.4906964905616447,
+      "finalYawRate": -1.1837095955177586
+    },
+    {
+      "kph": 250,
+      "command": 0.05,
+      "wheelAngleLimitDegrees": 0.6261977417970174,
+      "maxSideslipDegrees": 1.1894528068346735,
+      "maxYawRate": 0.20084707749137956,
+      "finalYawRate": -0.00082946026677222
+    },
+    {
+      "kph": 250,
+      "command": 0.1,
+      "wheelAngleLimitDegrees": 1.2523954835940347,
+      "maxSideslipDegrees": 2.482080390195417,
+      "maxYawRate": 0.3971935978185649,
+      "finalYawRate": -0.0019520568374563178
+    },
+    {
+      "kph": 250,
+      "command": 0.25,
+      "wheelAngleLimitDegrees": 3.130988708985087,
+      "maxSideslipDegrees": 9.945469494896539,
+      "maxYawRate": 0.9081766732178862,
+      "finalYawRate": -0.4228087169561049
+    },
+    {
+      "kph": 250,
+      "command": 1,
+      "wheelAngleLimitDegrees": 12.523954835940348,
+      "maxSideslipDegrees": 55.56218363571989,
+      "maxYawRate": 1.6894417934671688,
+      "finalYawRate": -1.2027538528487158
+    },
+    {
+      "kph": 300,
+      "command": 0.05,
+      "wheelAngleLimitDegrees": 0.5568052615446883,
+      "maxSideslipDegrees": 1.2971299681299089,
+      "maxYawRate": 0.22065303113948412,
+      "finalYawRate": -0.00161544825319773
+    },
+    {
+      "kph": 300,
+      "command": 0.1,
+      "wheelAngleLimitDegrees": 1.1136105230893767,
+      "maxSideslipDegrees": 2.735670255282209,
+      "maxYawRate": 0.436722836337957,
+      "finalYawRate": -0.004015271529302657
+    },
+    {
+      "kph": 300,
+      "command": 0.25,
+      "wheelAngleLimitDegrees": 2.7840263077234413,
+      "maxSideslipDegrees": 19.79171868137249,
+      "maxYawRate": 1.0000656585117174,
+      "finalYawRate": -0.915828117735285
+    },
+    {
+      "kph": 300,
+      "command": 1,
+      "wheelAngleLimitDegrees": 11.136105230893765,
+      "maxSideslipDegrees": 62.74174452092047,
+      "maxYawRate": 1.877884367207797,
+      "finalYawRate": -1.1507161736988003
+    }
+  ],
+  "aero": [
+    {
+      "kph": 100,
+      "downforceN": 2006.172839506173,
+      "weightN": 7828.38
+    },
+    {
+      "kph": 200,
+      "downforceN": 8024.691358024692,
+      "weightN": 7828.38
+    },
+    {
+      "kph": 300,
+      "downforceN": 18055.555555555555,
+      "weightN": 7828.38
+    }
+  ]
+}

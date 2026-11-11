@@ -1,5 +1,10 @@
 # APEX — Alpine Grand Prix
 
+[開始遊戲](https://harrylin0312.github.io/apex-formula/) · [物理報告](https://harrylin0312.github.io/apex-formula/physics-report.html) · [審查交接](REVIEW_HANDOFF.md)
+
+**待修問題：高速容易打滑。** 本次先發布現況供檢查，尚未套用高速操控修正；請先讀交接文件與研究重現程式。既有 18 項測試通過，不代表高速手感已驗證。
+
+
 Buildless WebGL racing game. Serve `dist/` over HTTP; ES modules require an HTTP origin. Three.js r170 is bundled with its MIT license under `dist/vendor/`.
 
 The full Traditional Chinese physics design, parameter and validation report is in `PHYSICS_REPORT.md` and published as `dist/physics-report.html`. Reproducible test data is in `dist/physics-results.json`.
@@ -34,3 +39,7 @@ node tests/physics.test.mjs --save
 The 18 regression checks cover steering direction, Ackermann, linear controls/torques, split surface, force limits, normal-load conservation, load transfer, wheelspin, ABS, fixed-camera invariance, passive energy dissipation, lap/recovery behavior, collisions, low-speed corner geometry, two complete controller-driven laps and timestep convergence. Browser checks cover startup, analog pedal operation, steering, fixed views, live wheel telemetry and responsive landscape/portrait layouts. Real phones, multitouch performance and physical gamepads remain unverified.
 
 Optional Google Fonts have system-font fallbacks. Original game and assets; no official association with F1, Red Bull Ring, Real Racing 3 or Ala Mobile.
+
+## GitHub Pages publication
+
+The `main` branch contains the complete editable source and tests. The `gh-pages` branch is derived from `main:dist` with `git subtree split`. After committing an authorized update, run `sh scripts/publish-pages.sh`, then check the Pages build status. This does not update the historical Sites deployment.
