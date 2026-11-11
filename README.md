@@ -1,31 +1,36 @@
-# APEX — Coastal Grand Prix
+# APEX — Alpine Grand Prix
 
-Browser-based 3D open-wheel racing game, rendered with bundled Three.js r170 (MIT license in `dist/vendor/THREE-LICENSE.txt`). No build step or external runtime engine download is needed. Optional Google Fonts have local font fallbacks.
+Buildless WebGL racing game. Serve `dist/` over HTTP; ES modules require an HTTP origin. Three.js r170 is bundled with its MIT license under `dist/vendor/`.
 
-Serve `dist/` with an HTTP server. ES modules require HTTP; opening index.html directly is not supported.
+The full Traditional Chinese physics design, parameter and validation report is in `PHYSICS_REPORT.md` and published as `dist/physics-report.html`. Reproducible test data is in `dist/physics-results.json`.
 
-## Play
+## Controls
 
-- Grand Prix: eight cars, three laps, three difficulty levels, collision response and finish classification.
-- Time attack: unlimited laps and browser-local personal best.
-- Chase, cockpit and nose cameras (C).
-- Keyboard: WASD/arrows, Space for ERS, R for track recovery, Escape for pause.
-- Touch: proportional steering pad plus independently held throttle, brake and ERS. Portrait and landscape layouts.
-- Standard gamepad axes and triggers are supported but not hardware-verified.
-- Optional automatic throttle, braking/traction assistance and racing line; three liveries; quality selection.
+- WASD/arrows: steering and linearly ramped pedals. C: chase/cockpit/nose camera. Space: ERS. R: recover. Escape: pause.
+- Touch/mouse pedals: bottom-to-top travel maps linearly to 0–100%; release returns to zero. The left steering pad is proportional. Portrait and landscape layouts are supported.
+- Standard gamepad triggers accept analog throttle/brake. Hardware verification is outstanding.
+- ABS/traction control and automatic throttle are optional and default off.
 
-Track recovery holds the player for three seconds while opponents continue. Track departure invalidates time-attack lap times. Recovery preserves race progress. Window blur and hidden tabs pause the race and clear held inputs.
+## Vehicle dynamics
 
-## Implementation
+`dist/core.js` implements a planar rigid body with four independent wheel rotational states. Each contact point samples asphalt, curb, grass or gravel independently. Wheel loads include static distribution, aero downforce, longitudinal and lateral quasi-static load transfer and load sensitivity. Wheel slip, slip angle and combined-slip force limits produce acceleration, braking and yaw through force/moment integration. Ackermann front steering, rear drive, individual ABS/TCS intervention and implicit longitudinal wheel-force integration are included.
 
-`core.js` contains fixed-120-Hz vehicle dynamics, a resampled 3.66 km spline circuit, bounded track progress, surface-dependent grip, drag/downforce, ERS and collision separation. Handling is tuned for a playable racing game; no claim of validated F1 vehicle data. AI follows a curvature-based speed profile with braking anticipation and lane changes.
+Player and AI share the same solver. The chassis loop runs at 120 Hz with two tyre substeps (240 Hz). Fixed cockpit/nose views have no follow smoothing, speed FOV change or impact shake. The chase view remains smoothed.
 
-`game.js` contains scene geometry, car models, race flow, UI, cameras and synthesized audio. Curbs, fencing, trees, spectators and the racing line use instancing; static car parts are merged by material. Mobile defaults reduce render resolution and disable shadows.
+The original 4.062 km / 12-corner Alpine circuit references the stop-and-go character of Red Bull Ring and includes six 18–28 m-radius corners. It does not replicate official surveyed coordinates or elevation.
+
+The model is not calibrated against real F1 tyre data. Suspension vertical dynamics, elevation, tyre temperature/wear, weather, detailed transmission/differential and full collision angular momentum are not implemented. These limitations are explicit in the report.
 
 ## Verification
 
-Run `node tests/physics.test.mjs` and `node --check dist/game.js`.
+Run:
 
-Core tests exercise acceleration, stopping, steering, surface limits, recovery, lap wrap, collision separation and two complete laps under closed-loop driving. Safari browser checks cover WebGL rendering, eight-car starts, running race HUD, camera changes, pause and responsive 390×844 / 844×390 layouts. Physical phone performance, multitouch and gamepad input still need device checks.
+```sh
+node --check dist/game.js
+node --check dist/core.js
+node tests/physics.test.mjs --save
+```
 
-Original game and assets; no official association with F1, Real Racing 3 or Ala Mobile.
+The 18 regression checks cover steering direction, Ackermann, linear controls/torques, split surface, force limits, normal-load conservation, load transfer, wheelspin, ABS, fixed-camera invariance, passive energy dissipation, lap/recovery behavior, collisions, low-speed corner geometry, two complete controller-driven laps and timestep convergence. Browser checks cover startup, analog pedal operation, steering, fixed views, live wheel telemetry and responsive landscape/portrait layouts. Real phones, multitouch performance and physical gamepads remain unverified.
+
+Optional Google Fonts have system-font fallbacks. Original game and assets; no official association with F1, Red Bull Ring, Real Racing 3 or Ala Mobile.

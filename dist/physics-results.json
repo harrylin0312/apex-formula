@@ -1,0 +1,154 @@
+{
+  "model": "four-wheel-v1",
+  "checks": [
+    "Right input turns to the camera-right at every cardinal heading",
+    "Left and right steering are mirror-symmetric on a straight",
+    "Ackermann inner front wheel steers more; rear wheels remain unsteered",
+    "Pedal travel is linear at 0,25,50,75,100 percent and releases smoothly on keys",
+    "Throttle/brake commands map linearly to per-wheel requested torques",
+    "Each wheel samples its own surface on a split asphalt/grass boundary",
+    "Normal loads conserve weight plus downforce and remain nonnegative",
+    "Braking shifts load forward; left cornering loads the right wheels",
+    "Rear wheelspin, front/rear loads and split-grip brake yaw emerge independently",
+    "Combined braking and cornering obey each individual friction circle",
+    "Optional ABS reduces individual brake torque for a slipping wheel",
+    "Fixed cockpit/nose poses have no speed, steering or yaw-rate dependence",
+    "Unpowered straight-line motion dissipates total chassis and wheel energy",
+    "Track recovery cannot advance distance; a valid finish crossing increments a lap",
+    "Contact resolution separates overlapping cars",
+    "Circuit has at least six low-speed corners with radius at most 28 metres",
+    "All four-wheel AI physics can drive two full low-speed-corner laps",
+    "240 Hz and 480 Hz tyre integration converge for a one-second manoeuvre"
+  ],
+  "metrics": {
+    "splitSurface": [
+      {
+        "wheel": "FL",
+        "surface": "grass",
+        "mu": 0.478
+      },
+      {
+        "wheel": "FR",
+        "surface": "asphalt",
+        "mu": 1.744
+      },
+      {
+        "wheel": "RL",
+        "surface": "grass",
+        "mu": 0.474
+      },
+      {
+        "wheel": "RR",
+        "surface": "asphalt",
+        "mu": 1.727
+      }
+    ],
+    "loadExample": {
+      "static": [
+        2380,
+        2380,
+        2704,
+        2704
+      ],
+      "braking": [
+        2943,
+        2943,
+        2141,
+        2141
+      ],
+      "leftCorner": [
+        1274,
+        3487,
+        1683,
+        3725
+      ]
+    },
+    "acceleration0to100": {
+      "seconds": 2.817,
+      "metres": 36.64
+    },
+    "acceleration0to200": {
+      "seconds": 5.85,
+      "metres": 168.82
+    },
+    "braking100to0Asphalt": {
+      "seconds": 1.683,
+      "metres": 20.2
+    },
+    "braking100to0Grass": {
+      "seconds": 4.575,
+      "metres": 59.45
+    },
+    "braking200to0Asphalt": {
+      "seconds": 2.775,
+      "metres": 66.14
+    },
+    "braking100to0HalfPedal": {
+      "seconds": 2.217,
+      "metres": 30.72
+    },
+    "closedLoop": {
+      "laps": 2,
+      "seconds": 229.64,
+      "maximumCentreOffset": 1.041
+    },
+    "timestepDifference": {
+      "speedPercent": 0.004,
+      "headingDegrees": 0.076
+    }
+  },
+  "track": {
+    "lengthMetres": 4061.909,
+    "widthMetres": 14.4,
+    "corners": [
+      {
+        "number": 1,
+        "radiusMetres": 28
+      },
+      {
+        "number": 2,
+        "radiusMetres": 75
+      },
+      {
+        "number": 3,
+        "radiusMetres": 18
+      },
+      {
+        "number": 4,
+        "radiusMetres": 26
+      },
+      {
+        "number": 5,
+        "radiusMetres": 24
+      },
+      {
+        "number": 6,
+        "radiusMetres": 40
+      },
+      {
+        "number": 7,
+        "radiusMetres": 20
+      },
+      {
+        "number": 8,
+        "radiusMetres": 52
+      },
+      {
+        "number": 9,
+        "radiusMetres": 55
+      },
+      {
+        "number": 10,
+        "radiusMetres": 30
+      },
+      {
+        "number": 11,
+        "radiusMetres": 24
+      },
+      {
+        "number": 12,
+        "radiusMetres": 32
+      }
+    ]
+  }
+}
