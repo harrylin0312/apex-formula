@@ -1,6 +1,8 @@
 {
   "model": "four-wheel-v1",
   "checks": [
+    "Speed-sensitive steering doubles the speed term while preserving low-speed lock",
+    "Loaded tyres retain asphalt mu >=1.9 and off-track mu >=1",
     "Right input turns to the camera-right at every cardinal heading",
     "Left and right steering are mirror-symmetric on a straight",
     "Ackermann inner front wheel steers more; rear wheels remain unsteered",
@@ -21,26 +23,44 @@
     "240 Hz and 480 Hz tyre integration converge for a one-second manoeuvre"
   ],
   "metrics": {
+    "steeringDegrees": [
+      {
+        "kmh": 0,
+        "degrees": 33.232
+      },
+      {
+        "kmh": 100,
+        "degrees": 14.307
+      },
+      {
+        "kmh": 200,
+        "degrees": 9.116
+      },
+      {
+        "kmh": 300,
+        "degrees": 6.689
+      }
+    ],
     "splitSurface": [
       {
         "wheel": "FL",
         "surface": "grass",
-        "mu": 0.478
+        "mu": 1
       },
       {
         "wheel": "FR",
         "surface": "asphalt",
-        "mu": 1.744
+        "mu": 1.9
       },
       {
         "wheel": "RL",
         "surface": "grass",
-        "mu": 0.474
+        "mu": 1
       },
       {
         "wheel": "RR",
         "surface": "asphalt",
-        "mu": 1.727
+        "mu": 1.9
       }
     ],
     "loadExample": {
@@ -64,24 +84,24 @@
       ]
     },
     "acceleration0to100": {
-      "seconds": 2.817,
-      "metres": 36.64
+      "seconds": 2.45,
+      "metres": 31.61
     },
     "acceleration0to200": {
-      "seconds": 5.85,
-      "metres": 168.82
+      "seconds": 5.45,
+      "metres": 162.86
     },
     "braking100to0Asphalt": {
-      "seconds": 1.683,
-      "metres": 20.2
+      "seconds": 1.55,
+      "metres": 18.36
     },
     "braking100to0Grass": {
-      "seconds": 4.575,
-      "metres": 59.45
+      "seconds": 2.508,
+      "metres": 31.93
     },
     "braking200to0Asphalt": {
-      "seconds": 2.775,
-      "metres": 66.14
+      "seconds": 2.625,
+      "metres": 63.8
     },
     "braking100to0HalfPedal": {
       "seconds": 2.217,
@@ -89,12 +109,12 @@
     },
     "closedLoop": {
       "laps": 2,
-      "seconds": 229.64,
-      "maximumCentreOffset": 1.041
+      "seconds": 227.73,
+      "maximumCentreOffset": 1.054
     },
     "timestepDifference": {
-      "speedPercent": 0.004,
-      "headingDegrees": 0.076
+      "speedPercent": 0.003,
+      "headingDegrees": 0.058
     }
   },
   "track": {
