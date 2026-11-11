@@ -36,7 +36,7 @@ node --check dist/core.js
 node tests/physics.test.mjs --save
 ```
 
-The 18 regression checks cover steering direction, Ackermann, linear controls/torques, split surface, force limits, normal-load conservation, load transfer, wheelspin, ABS, fixed-camera invariance, passive energy dissipation, lap/recovery behavior, collisions, low-speed corner geometry, two complete controller-driven laps and timestep convergence. Browser checks cover startup, analog pedal operation, steering, fixed views, live wheel telemetry and responsive landscape/portrait layouts. Real phones, multitouch performance and physical gamepads remain unverified.
+The 21 regression checks cover steering direction, Ackermann, linear controls/torques, split surface, force limits, normal-load conservation, load transfer, wheelspin, ABS, fixed-camera invariance, passive energy dissipation, lap/recovery behavior, collisions, low-speed corner geometry, two complete controller-driven laps and timestep convergence. Browser checks cover startup, analog pedal operation, steering, fixed views, live wheel telemetry and responsive landscape/portrait layouts. Real phones, multitouch performance and physical gamepads remain unverified.
 
 Optional Google Fonts have system-font fallbacks. Original game and assets; no official association with F1, Red Bull Ring, Real Racing 3 or Ala Mobile.
 

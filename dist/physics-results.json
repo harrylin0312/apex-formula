@@ -3,6 +3,7 @@
   "checks": [
     "Speed-sensitive steering doubles the speed term while preserving low-speed lock",
     "Loaded tyres retain asphalt mu >=1.9 and off-track mu >=1",
+    "Gravel uses base mu 1.2, load sensitivity and slip-reduced force capacity",
     "Right input turns to the camera-right at every cardinal heading",
     "Left and right steering are mirror-symmetric on a straight",
     "Ackermann inner front wheel steers more; rear wheels remain unsteered",
@@ -39,6 +40,80 @@
       {
         "kmh": 300,
         "degrees": 6.689
+      }
+    ],
+    "gravel": [
+      {
+        "kmh": 0,
+        "wheel": "FL",
+        "mu": 1.207927888173356,
+        "effectiveMu": 1.2079278881733557
+      },
+      {
+        "kmh": 0,
+        "wheel": "FR",
+        "mu": 1.207927888173356,
+        "effectiveMu": 1.2079278881733557
+      },
+      {
+        "kmh": 0,
+        "wheel": "RL",
+        "mu": 1.1965994707244991,
+        "effectiveMu": 1.1965994707244991
+      },
+      {
+        "kmh": 0,
+        "wheel": "RR",
+        "mu": 1.1965994707244991,
+        "effectiveMu": 1.1965994707244991
+      },
+      {
+        "kmh": 144,
+        "wheel": "FL",
+        "mu": 1.1674747202656177,
+        "effectiveMu": 1.1674747202656177
+      },
+      {
+        "kmh": 144,
+        "wheel": "FR",
+        "mu": 1.1674747202656177,
+        "effectiveMu": 1.1674747202656177
+      },
+      {
+        "kmh": 144,
+        "wheel": "RL",
+        "mu": 1.1566018762952919,
+        "effectiveMu": 1.1566018762952919
+      },
+      {
+        "kmh": 144,
+        "wheel": "RR",
+        "mu": 1.1566018762952919,
+        "effectiveMu": 1.1566018762952919
+      },
+      {
+        "kmh": 306,
+        "wheel": "FL",
+        "mu": 1.0962374035663802,
+        "effectiveMu": 1.0962374035663802
+      },
+      {
+        "kmh": 306,
+        "wheel": "FR",
+        "mu": 1.0962374035663802,
+        "effectiveMu": 1.0962374035663802
+      },
+      {
+        "kmh": 306,
+        "wheel": "RL",
+        "mu": 1.084403720352292,
+        "effectiveMu": 1.084403720352292
+      },
+      {
+        "kmh": 306,
+        "wheel": "RR",
+        "mu": 1.084403720352292,
+        "effectiveMu": 1.084403720352292
       }
     ],
     "splitSurface": [
@@ -115,6 +190,32 @@
     "timestepDifference": {
       "speedPercent": 0.003,
       "headingDegrees": 0.058
+    }
+  },
+  "surfaces": {
+    "asphalt": {
+      "label": "柏油",
+      "mu": 1.9,
+      "minMu": 1.9,
+      "rolling": 0.014
+    },
+    "curb": {
+      "label": "路緣",
+      "mu": 1.3,
+      "minMu": 1,
+      "rolling": 0.025
+    },
+    "grass": {
+      "label": "草地",
+      "mu": 1,
+      "minMu": 1,
+      "rolling": 0.12
+    },
+    "gravel": {
+      "label": "碎石",
+      "mu": 1.2,
+      "minMu": 1,
+      "rolling": 0.18
     }
   },
   "track": {
