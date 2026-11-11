@@ -1,7 +1,7 @@
 {
   "model": "four-wheel-v1",
   "checks": [
-    "Speed-sensitive steering quadruples the original speed term while preserving low-speed lock",
+    "Mid-speed steering restriction preserves low-speed lock and high-speed limits",
     "Loaded tyres retain asphalt mu >=1.9 and off-track mu >=1",
     "Gravel uses base mu 1.2, load sensitivity and slip-reduced force capacity",
     "Right input turns to the camera-right at every cardinal heading",
@@ -32,11 +32,11 @@
       },
       {
         "kmh": 100,
-        "degrees": 9.116
+        "degrees": 6.563
       },
       {
         "kmh": 200,
-        "degrees": 5.282
+        "degrees": 4.49
       },
       {
         "kmh": 300,
@@ -162,12 +162,12 @@
     "friendlyBrake": [
       {
         "friendlyBrake": false,
-        "maximumBetaDegrees": 62.06450166518049,
-        "lockedWheelSamples": 123
+        "maximumBetaDegrees": 56.900505746324626,
+        "lockedWheelSamples": 114
       },
       {
         "friendlyBrake": true,
-        "maximumBetaDegrees": 5.26830081239044,
+        "maximumBetaDegrees": 4.6227866634538435,
         "lockedWheelSamples": 0
       }
     ],
@@ -202,7 +202,7 @@
     },
     "timestepDifference": {
       "speedPercent": 0.002,
-      "headingDegrees": 0.039
+      "headingDegrees": 0.033
     }
   },
   "surfaces": {

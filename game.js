@@ -1,12 +1,12 @@
 import * as THREE from './vendor/three.module.js';
 import {createLabScene} from './lab-scene.js?v=lab-1';
 import {createLabPanel} from './lab-panel.js?v=brake-1';
-import {createLabObserver} from './lab-telemetry.js?v=brake-1';
+import {createLabObserver} from './lab-telemetry.js?v=steering-5';
 import {bindTouchControls} from './touch-controls.js?v=controls-5';
 import {createEngineAudio} from './engine-audio.js?v=engine-1';
 import {createTyreSmoke} from './tyre-smoke.js?v=smoke-1';
 import {loadVehicleTemplate,instantiateVehicle,installCarLighting} from './car-model.js';
-import {clamp,lerp,wrap,angleDiff,LENGTH,HALF,COUNT,path,sample,nearest,createCar,drive,recover,collide,PHYSICS,LAB_ENVIRONMENT,CORNERS,aiControls,pedalRamp,pedalAt,fixedCameraPose} from './core.js?v=brake-1';
+import {clamp,lerp,wrap,angleDiff,LENGTH,HALF,COUNT,path,sample,nearest,createCar,drive,recover,collide,PHYSICS,LAB_ENVIRONMENT,CORNERS,aiControls,pedalRamp,pedalAt,fixedCameraPose} from './core.js?v=steering-5';
 const $=id=>document.getElementById(id),canvas=$('game'),coarse=matchMedia('(pointer:coarse)').matches;
 let renderer;try{renderer=new THREE.WebGLRenderer({canvas,antialias:!coarse,powerPreference:'high-performance'});}catch(e){$('loading').innerHTML='<b>APEX</b><span>無法啟動 WebGL。請使用支援硬體加速的 Safari 或 Chrome。</span>';throw e;}
 let vehicleTemplate;try{vehicleTemplate=await loadVehicleTemplate(e=>{const ratio=e.total?Math.round(e.loaded/e.total*100):0;$('loading').querySelector('span').textContent=ratio?`正在載入完整賽車模型 · ${ratio}%`:'正在載入完整賽車模型…';});}catch(error){$('loading').innerHTML='<b>APEX</b><span>賽車模型載入失敗，請檢查連線後重試。</span><button id="retryModel">重新載入</button>';$('retryModel').onclick=()=>location.reload();throw error;}
