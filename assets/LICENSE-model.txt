@@ -1,0 +1,20 @@
+Formula F226 by CarlosCG31
+https://sketchfab.com/CarlosCG31
+https://sketchfab.com/3d-models/formula-f226-a4dd03155ab64a6a9b7c677af189c1a1
+
+Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+License: https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+Web-optimized derivative supplied by BadCodesGG / interactive-f1:
+https://github.com/BadCodesGG/interactive-f1
+Upstream changes: grouped components; textures replaced with painted liveries;
+Meshopt compression. The upstream NOTICE identifies this model as CC BY 4.0.
+
+Changes by APEX: runtime coordinate/scale adaptation and wheel alignment;
+static geometry merging; new APEX vertex-color paint, materials and decals;
+independent wheel animations and a generic driver.
+
+The unchanged downloaded file, its upstream commit and SHA-256 are documented
+in formula-f226.provenance.json. No BadCodes logo/wordmark textures are included.
+No endorsement by the model authors, F1 or any real racing team is implied.
