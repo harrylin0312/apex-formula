@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import * as m from '../dist/core.js';
+const runs=[];for(const friendly of [false,true])for(const kmh of [80,150,200,300])for(const brake of [.5,.8,.9,1])for(const steer of [0,.25,.5]){let c=m.createCar(0);m.setVelocity(c,kmh/3.6);for(let i=0;i<48;i++)m.drive(c,{steer,gas:0,friendlyBrake:friendly},1/120,false,m.LAB_ENVIRONMENT);let maxBeta=0,maxSlip=0,locks=0;for(let i=0;i<120;i++){m.drive(c,{steer,brake,friendlyBrake:friendly},1/120,false,m.LAB_ENVIRONMENT);for(const w of c.wheels){assert(Number.isFinite(w.omega));assert(Math.hypot(w.fx,w.fy)<=w.capacity+1e-6);if(friendly&&brake<=.9)assert(w.brakeTorque<=w.requestedBrakeTorque+1e-6);}
+let u=c.vx*Math.sin(c.a)+c.vz*Math.cos(c.a),v=c.vx*Math.cos(c.a)-c.vz*Math.sin(c.a);maxBeta=Math.max(maxBeta,Math.abs(Math.atan2(v,u))*180/Math.PI);if(c.speed>4){maxSlip=Math.max(maxSlip,...c.wheels.map(w=>-w.slipRatio));locks+=c.wheels.filter(w=>w.locked).length;}}
+runs.push({friendly,kmh,brake,steer,maxBeta,maxSlip,locks,finalSpeed:c.speed*3.6});}for(const r of runs.filter(r=>r.friendly&&r.brake<=.9)){assert.equal(r.locks,0);assert(r.maxSlip<.13);}
+for(const kmh of [150,200]){const raw=runs.find(r=>!r.friendly&&r.kmh===kmh&&r.brake===.9&&r.steer===.25),aided=runs.find(r=>r.friendly&&r.kmh===kmh&&r.brake===.9&&r.steer===.25);assert(aided.maxBeta<raw.maxBeta*.4);}
+assert(runs.some(r=>r.friendly&&r.brake===1&&r.locks>0),'last 10% must retain actual lockup risk');
+// Both environments use the same optional aid on identical asphalt.
+const race=m.createCar(100),lab=m.createCar(100);m.setVelocity(race,30);m.setVelocity(lab,30);for(let i=0;i<20;i++){const input={brake:.9,steer:.1,friendlyBrake:true};m.drive(race,input,1/120);m.drive(lab,input,1/120,false,m.LAB_ENVIRONMENT);assert(Math.abs(race.vx-lab.vx)<1e-8);assert(Math.abs(race.vz-lab.vz)<1e-8);}
+// Braking must dissipate energy; optional aids must not create grip or propulsion.
+{let c=m.createCar(0);m.setVelocity(c,30);const energy=()=>.5*m.PHYSICS.mass*c.speed**2+.5*m.PHYSICS.yawInertia*c.yaw**2+c.wheels.reduce((sum,w)=>sum+.5*m.PHYSICS.wheelInertia*w.omega**2,0);let prior=energy();for(let i=0;i<120;i++){m.drive(c,{brake:.9,friendlyBrake:true},1/120,false,m.LAB_ENVIRONMENT);const next=energy();assert(next<=prior+1);prior=next;}}
+{let states=[];for(const dt of [1/120,1/240]){let c=m.createCar(0);m.setVelocity(c,200/3.6);for(let t=0;t<1-1e-8;t+=dt)m.drive(c,{brake:.9,steer:.25,friendlyBrake:true},dt,false,m.LAB_ENVIRONMENT);states.push(c);}assert(Math.abs(states[0].speed-states[1].speed)/states[0].speed<.04);assert(Math.abs(states[0].a-states[1].a)<.04);}
+const stops=[];for(const friendly of [false,true])for(const kmh of [100,200]){let c=m.createCar(0);m.setVelocity(c,kmh/3.6);let t=0;while(c.speed>.2&&t<15){m.drive(c,{brake:friendly?.9:1,friendlyBrake:friendly},1/120,false,m.LAB_ENVIRONMENT);t+=1/120;}assert(t<15);stops.push({friendly,kmh,seconds:t,metres:Math.hypot(c.x,c.z)});}
+const result={pass:true,conditions:'Fixed asphalt; 0.4 s turn setup, then 1 s braking at fixed input; no ABS/TCS; lock count ignores speed <=4m/s; 120Hz',runs,stops};console.log(JSON.stringify(result,null,2));
+if(process.argv.includes('--save'))fs.writeFileSync(new URL('../research/friendly-brake-validation.json',import.meta.url),JSON.stringify(result,null,2)+'\n');

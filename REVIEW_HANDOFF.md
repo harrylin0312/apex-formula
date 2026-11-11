@@ -1,5 +1,9 @@
 # 給下一個對話的檢查交接
 
+## 友善煞車（brake-v1）
+
+預設開啟、可關閉。input.friendlyBrake 每輪依真實 C/Fy/Fz 調節煞車扭矩，前 90% 保守，最後 10% 保留超限風險；不改原輪胎力模型。S／↓ 在友善模式最多 90%，Shift 可到 100%。詳細推導、限制、研究來源與測試見 PHYSICS_REPORT.md 的友善煞車章節及 tests/friendly-brake.test.mjs。22 項物理測試，原始模式回歸仍保留。
+
 ## 後續驗證（2026-11-12）
 
 見 WIND_TUNNEL_VALIDATION.md 最後章節、tests/steering-validation.test.mjs 與 research/steering-v4-validation.json。Chrome 公開版手動加速／暫停／重設／三種視角已驗證。25% 方向的側滑與回正明顯改善；300 km/h 滿方向仍會大幅失控。另已確認風洞使用率未到 90% 時，即使 α 約 8°、滑速約 9 m/s 仍顯示抓地穩定；此判讀缺口尚未修改，勿誤報為所有動態已穩定。

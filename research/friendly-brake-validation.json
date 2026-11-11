@@ -1,0 +1,992 @@
+{
+  "pass": true,
+  "conditions": "Fixed asphalt; 0.4 s turn setup, then 1 s braking at fixed input; no ABS/TCS; lock count ignores speed <=4m/s; 120Hz",
+  "runs": [
+    {
+      "friendly": false,
+      "kmh": 80,
+      "brake": 0.5,
+      "steer": 0,
+      "maxBeta": 2.4564376552409675e-30,
+      "maxSlip": 0.0773221766200581,
+      "locks": 0,
+      "finalSpeed": 34.42858441743097
+    },
+    {
+      "friendly": false,
+      "kmh": 80,
+      "brake": 0.5,
+      "steer": 0.25,
+      "maxBeta": 1.0113459699018759,
+      "maxSlip": 0.09593048091341463,
+      "locks": 0,
+      "finalSpeed": 33.68008123925725
+    },
+    {
+      "friendly": false,
+      "kmh": 80,
+      "brake": 0.5,
+      "steer": 0.5,
+      "maxBeta": 6.294277615992591,
+      "maxSlip": 1.0349637600940331,
+      "locks": 77,
+      "finalSpeed": 31.173387696082607
+    },
+    {
+      "friendly": false,
+      "kmh": 80,
+      "brake": 0.8,
+      "steer": 0,
+      "maxBeta": 2.809561251983585e-30,
+      "maxSlip": 1.0979422029846284,
+      "locks": 144,
+      "finalSpeed": 14.369614461596308
+    },
+    {
+      "friendly": false,
+      "kmh": 80,
+      "brake": 0.8,
+      "steer": 0.25,
+      "maxBeta": 1.3964199355591822,
+      "maxSlip": 1.0947254966209412,
+      "locks": 217,
+      "finalSpeed": 16.724019057021227
+    },
+    {
+      "friendly": false,
+      "kmh": 80,
+      "brake": 0.8,
+      "steer": 0.5,
+      "maxBeta": 3.6520213108214534,
+      "maxSlip": 1.0973318227857154,
+      "locks": 213,
+      "finalSpeed": 17.41345262132521
+    },
+    {
+      "friendly": false,
+      "kmh": 80,
+      "brake": 0.9,
+      "steer": 0,
+      "maxBeta": 2.0178035106581414e-30,
+      "maxSlip": 1.0983655201488287,
+      "locks": 354,
+      "finalSpeed": 17.339280641168056
+    },
+    {
+      "friendly": false,
+      "kmh": 80,
+      "brake": 0.9,
+      "steer": 0.25,
+      "maxBeta": 4.448154565327899,
+      "maxSlip": 1.1427240771826193,
+      "locks": 318,
+      "finalSpeed": 16.45840798845184
+    },
+    {
+      "friendly": false,
+      "kmh": 80,
+      "brake": 0.9,
+      "steer": 0.5,
+      "maxBeta": 2.2475402848554498,
+      "maxSlip": 1.125933104017204,
+      "locks": 339,
+      "finalSpeed": 17.266951284463847
+    },
+    {
+      "friendly": false,
+      "kmh": 80,
+      "brake": 1,
+      "steer": 0,
+      "maxBeta": 2.7725563048817755e-30,
+      "maxSlip": 1,
+      "locks": 404,
+      "finalSpeed": 17.897670706658552
+    },
+    {
+      "friendly": false,
+      "kmh": 80,
+      "brake": 1,
+      "steer": 0.25,
+      "maxBeta": 0.9103879663804338,
+      "maxSlip": 1.151621859554365,
+      "locks": 400,
+      "finalSpeed": 17.835841853264508
+    },
+    {
+      "friendly": false,
+      "kmh": 80,
+      "brake": 1,
+      "steer": 0.5,
+      "maxBeta": 1.8052029488648529,
+      "maxSlip": 1.1588373147483393,
+      "locks": 398,
+      "finalSpeed": 17.645593377929163
+    },
+    {
+      "friendly": false,
+      "kmh": 150,
+      "brake": 0.5,
+      "steer": 0,
+      "maxBeta": 2.0156103485331486e-30,
+      "maxSlip": 0.06205289584546308,
+      "locks": 0,
+      "finalSpeed": 100.2888301920805
+    },
+    {
+      "friendly": false,
+      "kmh": 150,
+      "brake": 0.5,
+      "steer": 0.25,
+      "maxBeta": 30.150701774355916,
+      "maxSlip": 0.8141933855735466,
+      "locks": 1,
+      "finalSpeed": 92.45629629725505
+    },
+    {
+      "friendly": false,
+      "kmh": 150,
+      "brake": 0.5,
+      "steer": 0.5,
+      "maxBeta": 71.7572051344835,
+      "maxSlip": 1.0852564191106873,
+      "locks": 51,
+      "finalSpeed": 82.77386019650483
+    },
+    {
+      "friendly": false,
+      "kmh": 150,
+      "brake": 0.8,
+      "steer": 0,
+      "maxBeta": 3.044177079699175e-30,
+      "maxSlip": 0.18075616096503003,
+      "locks": 0,
+      "finalSpeed": 74.97454955217115
+    },
+    {
+      "friendly": false,
+      "kmh": 150,
+      "brake": 0.8,
+      "steer": 0.25,
+      "maxBeta": 34.5785696137432,
+      "maxSlip": 1.0405910871333737,
+      "locks": 130,
+      "finalSpeed": 76.08189280362038
+    },
+    {
+      "friendly": false,
+      "kmh": 150,
+      "brake": 0.8,
+      "steer": 0.5,
+      "maxBeta": 28.789449600267343,
+      "maxSlip": 1,
+      "locks": 175,
+      "finalSpeed": 75.69526865372356
+    },
+    {
+      "friendly": false,
+      "kmh": 150,
+      "brake": 0.9,
+      "steer": 0,
+      "maxBeta": 2.2201884722272523e-30,
+      "maxSlip": 1.0245631154365897,
+      "locks": 54,
+      "finalSpeed": 70.07680642279705
+    },
+    {
+      "friendly": false,
+      "kmh": 150,
+      "brake": 0.9,
+      "steer": 0.25,
+      "maxBeta": 16.293072998064225,
+      "maxSlip": 1,
+      "locks": 153,
+      "finalSpeed": 73.87538933747572
+    },
+    {
+      "friendly": false,
+      "kmh": 150,
+      "brake": 0.9,
+      "steer": 0.5,
+      "maxBeta": 16.256339514400214,
+      "maxSlip": 1.0373414679507682,
+      "locks": 190,
+      "finalSpeed": 73.37586127676481
+    },
+    {
+      "friendly": false,
+      "kmh": 150,
+      "brake": 1,
+      "steer": 0,
+      "maxBeta": 2.887798576597518e-30,
+      "maxSlip": 1,
+      "locks": 118,
+      "finalSpeed": 66.59051759720931
+    },
+    {
+      "friendly": false,
+      "kmh": 150,
+      "brake": 1,
+      "steer": 0.25,
+      "maxBeta": 13.865690830088912,
+      "maxSlip": 1.0394007011934383,
+      "locks": 186,
+      "finalSpeed": 71.31702331661242
+    },
+    {
+      "friendly": false,
+      "kmh": 150,
+      "brake": 1,
+      "steer": 0.5,
+      "maxBeta": 8.692295744157466,
+      "maxSlip": 1,
+      "locks": 216,
+      "finalSpeed": 71.7235670131368
+    },
+    {
+      "friendly": false,
+      "kmh": 200,
+      "brake": 0.5,
+      "steer": 0,
+      "maxBeta": 1.8895635788897155e-30,
+      "maxSlip": 0.05176126441362015,
+      "locks": 0,
+      "finalSpeed": 145.50600233929427
+    },
+    {
+      "friendly": false,
+      "kmh": 200,
+      "brake": 0.5,
+      "steer": 0.25,
+      "maxBeta": 47.060048068136076,
+      "maxSlip": 0.40165145583317347,
+      "locks": 0,
+      "finalSpeed": 129.83313027478124
+    },
+    {
+      "friendly": false,
+      "kmh": 200,
+      "brake": 0.5,
+      "steer": 0.5,
+      "maxBeta": 89.52297478540426,
+      "maxSlip": 1.1251663840257144,
+      "locks": 3,
+      "finalSpeed": 115.63103640631626
+    },
+    {
+      "friendly": false,
+      "kmh": 200,
+      "brake": 0.8,
+      "steer": 0,
+      "maxBeta": 2.5831630650889685e-30,
+      "maxSlip": 0.09846029050909764,
+      "locks": 0,
+      "finalSpeed": 120.42690351168866
+    },
+    {
+      "friendly": false,
+      "kmh": 200,
+      "brake": 0.8,
+      "steer": 0.25,
+      "maxBeta": 66.40945494491162,
+      "maxSlip": 1.0603633722670607,
+      "locks": 101,
+      "finalSpeed": 113.28665355357704
+    },
+    {
+      "friendly": false,
+      "kmh": 200,
+      "brake": 0.8,
+      "steer": 0.5,
+      "maxBeta": 68.350318195374,
+      "maxSlip": 1.0662127924673974,
+      "locks": 139,
+      "finalSpeed": 110.65058100677624
+    },
+    {
+      "friendly": false,
+      "kmh": 200,
+      "brake": 0.9,
+      "steer": 0,
+      "maxBeta": 2.6010619573548766e-30,
+      "maxSlip": 0.12862108929225735,
+      "locks": 0,
+      "finalSpeed": 112.06111680635317
+    },
+    {
+      "friendly": false,
+      "kmh": 200,
+      "brake": 0.9,
+      "steer": 0.25,
+      "maxBeta": 62.06450166518049,
+      "maxSlip": 1.061911209062147,
+      "locks": 123,
+      "finalSpeed": 109.79515954512816
+    },
+    {
+      "friendly": false,
+      "kmh": 200,
+      "brake": 0.9,
+      "steer": 0.5,
+      "maxBeta": 52.8075995343139,
+      "maxSlip": 1.0499335947904902,
+      "locks": 161,
+      "finalSpeed": 108.58867907277917
+    },
+    {
+      "friendly": false,
+      "kmh": 200,
+      "brake": 1,
+      "steer": 0,
+      "maxBeta": 2.9641220022419846e-30,
+      "maxSlip": 0.8336167737144717,
+      "locks": 4,
+      "finalSpeed": 105.76295917641589
+    },
+    {
+      "friendly": false,
+      "kmh": 200,
+      "brake": 1,
+      "steer": 0.25,
+      "maxBeta": 49.75212948694437,
+      "maxSlip": 1.0502142754104737,
+      "locks": 139,
+      "finalSpeed": 106.97769096850101
+    },
+    {
+      "friendly": false,
+      "kmh": 200,
+      "brake": 1,
+      "steer": 0.5,
+      "maxBeta": 38.06295947717991,
+      "maxSlip": 1.0389651530214916,
+      "locks": 177,
+      "finalSpeed": 106.48482374216567
+    },
+    {
+      "friendly": false,
+      "kmh": 300,
+      "brake": 0.5,
+      "steer": 0,
+      "maxBeta": 2.5575814597420383e-30,
+      "maxSlip": 0.03470985605583921,
+      "locks": 0,
+      "finalSpeed": 231.7652143586148
+    },
+    {
+      "friendly": false,
+      "kmh": 300,
+      "brake": 0.5,
+      "steer": 0.25,
+      "maxBeta": 59.28040287908153,
+      "maxSlip": 0.11647730905121968,
+      "locks": 0,
+      "finalSpeed": 200.11379955293046
+    },
+    {
+      "friendly": false,
+      "kmh": 300,
+      "brake": 0.5,
+      "steer": 0.5,
+      "maxBeta": 107.17708703606002,
+      "maxSlip": 0.1665281411439057,
+      "locks": 0,
+      "finalSpeed": 175.87568941163073
+    },
+    {
+      "friendly": false,
+      "kmh": 300,
+      "brake": 0.8,
+      "steer": 0,
+      "maxBeta": 2.6043901011658063e-30,
+      "maxSlip": 0.058979698462768196,
+      "locks": 0,
+      "finalSpeed": 207.23989924432252
+    },
+    {
+      "friendly": false,
+      "kmh": 300,
+      "brake": 0.8,
+      "steer": 0.25,
+      "maxBeta": 99.63605976083525,
+      "maxSlip": 1.2568994772037045,
+      "locks": 8,
+      "finalSpeed": 178.83291660074548
+    },
+    {
+      "friendly": false,
+      "kmh": 300,
+      "brake": 0.8,
+      "steer": 0.5,
+      "maxBeta": 130.80390274459788,
+      "maxSlip": 1,
+      "locks": 7,
+      "finalSpeed": 168.28722771159417
+    },
+    {
+      "friendly": false,
+      "kmh": 300,
+      "brake": 0.9,
+      "steer": 0,
+      "maxBeta": 3.407136537857399e-30,
+      "maxSlip": 0.06953460381858563,
+      "locks": 0,
+      "finalSpeed": 199.04645124958594
+    },
+    {
+      "friendly": false,
+      "kmh": 300,
+      "brake": 0.9,
+      "steer": 0.25,
+      "maxBeta": 108.84974933902586,
+      "maxSlip": 1.3134714235414502,
+      "locks": 25,
+      "finalSpeed": 176.60539438382503
+    },
+    {
+      "friendly": false,
+      "kmh": 300,
+      "brake": 0.9,
+      "steer": 0.5,
+      "maxBeta": 135.27797644797698,
+      "maxSlip": 1.2221202100450614,
+      "locks": 20,
+      "finalSpeed": 168.66926383075594
+    },
+    {
+      "friendly": false,
+      "kmh": 300,
+      "brake": 1,
+      "steer": 0,
+      "maxBeta": 1.8788157322879808e-30,
+      "maxSlip": 0.08388569622345853,
+      "locks": 0,
+      "finalSpeed": 190.84435867634778
+    },
+    {
+      "friendly": false,
+      "kmh": 300,
+      "brake": 1,
+      "steer": 0.25,
+      "maxBeta": 111.2237995696694,
+      "maxSlip": 1.2556030848147222,
+      "locks": 45,
+      "finalSpeed": 174.04180849467178
+    },
+    {
+      "friendly": false,
+      "kmh": 300,
+      "brake": 1,
+      "steer": 0.5,
+      "maxBeta": 125.85437766487759,
+      "maxSlip": 1.3130586982488783,
+      "locks": 50,
+      "finalSpeed": 168.71685053345058
+    },
+    {
+      "friendly": true,
+      "kmh": 80,
+      "brake": 0.5,
+      "steer": 0,
+      "maxBeta": 2.2020722038190582e-30,
+      "maxSlip": 0.05127570557931851,
+      "locks": 0,
+      "finalSpeed": 46.16659360328765
+    },
+    {
+      "friendly": true,
+      "kmh": 80,
+      "brake": 0.5,
+      "steer": 0.25,
+      "maxBeta": 0.606465257495446,
+      "maxSlip": 0.050596811856297615,
+      "locks": 0,
+      "finalSpeed": 46.40643019410819
+    },
+    {
+      "friendly": true,
+      "kmh": 80,
+      "brake": 0.5,
+      "steer": 0.5,
+      "maxBeta": 1.4100588255630848,
+      "maxSlip": 0.04831463034696461,
+      "locks": 0,
+      "finalSpeed": 47.19299912237162
+    },
+    {
+      "friendly": true,
+      "kmh": 80,
+      "brake": 0.8,
+      "steer": 0,
+      "maxBeta": 1.6889675112599998e-30,
+      "maxSlip": 0.08257917530137943,
+      "locks": 0,
+      "finalSpeed": 28.239915959033226
+    },
+    {
+      "friendly": true,
+      "kmh": 80,
+      "brake": 0.8,
+      "steer": 0.25,
+      "maxBeta": 1.457656717949054,
+      "maxSlip": 0.08208877708612307,
+      "locks": 0,
+      "finalSpeed": 28.82931759875909
+    },
+    {
+      "friendly": true,
+      "kmh": 80,
+      "brake": 0.8,
+      "steer": 0.5,
+      "maxBeta": 2.6842900534484557,
+      "maxSlip": 0.08106735807783673,
+      "locks": 0,
+      "finalSpeed": 30.66070523335651
+    },
+    {
+      "friendly": true,
+      "kmh": 80,
+      "brake": 0.9,
+      "steer": 0,
+      "maxBeta": 2.414340942785756e-30,
+      "maxSlip": 0.09307033729281036,
+      "locks": 0,
+      "finalSpeed": 22.33009066324478
+    },
+    {
+      "friendly": true,
+      "kmh": 80,
+      "brake": 0.9,
+      "steer": 0.25,
+      "maxBeta": 1.7895660625880647,
+      "maxSlip": 0.09265990707010194,
+      "locks": 0,
+      "finalSpeed": 22.99538907408234
+    },
+    {
+      "friendly": true,
+      "kmh": 80,
+      "brake": 0.9,
+      "steer": 0.5,
+      "maxBeta": 3.3193841086782694,
+      "maxSlip": 0.09219773370119631,
+      "locks": 0,
+      "finalSpeed": 25.08439003833939
+    },
+    {
+      "friendly": true,
+      "kmh": 80,
+      "brake": 1,
+      "steer": 0,
+      "maxBeta": 2.9158513447529775e-30,
+      "maxSlip": 1,
+      "locks": 400,
+      "finalSpeed": 17.88242670432044
+    },
+    {
+      "friendly": true,
+      "kmh": 80,
+      "brake": 1,
+      "steer": 0.25,
+      "maxBeta": 1.2175393776455676,
+      "maxSlip": 1.078772774931479,
+      "locks": 381,
+      "finalSpeed": 17.722457428901222
+    },
+    {
+      "friendly": true,
+      "kmh": 80,
+      "brake": 1,
+      "steer": 0.5,
+      "maxBeta": 4.5603174276934855,
+      "maxSlip": 1.0760158074568276,
+      "locks": 57,
+      "finalSpeed": 15.16309494348423
+    },
+    {
+      "friendly": true,
+      "kmh": 150,
+      "brake": 0.5,
+      "steer": 0,
+      "maxBeta": 3.125034086859201e-30,
+      "maxSlip": 0.05115907262392908,
+      "locks": 0,
+      "finalSpeed": 103.84072400342495
+    },
+    {
+      "friendly": true,
+      "kmh": 150,
+      "brake": 0.5,
+      "steer": 0.25,
+      "maxBeta": 2.621785037380085,
+      "maxSlip": 0.04631928756679654,
+      "locks": 0,
+      "finalSpeed": 106.86969666682988
+    },
+    {
+      "friendly": true,
+      "kmh": 150,
+      "brake": 0.5,
+      "steer": 0.5,
+      "maxBeta": 6.717298360098629,
+      "maxSlip": 0.03497303975037004,
+      "locks": 0,
+      "finalSpeed": 109.76628124062537
+    },
+    {
+      "friendly": true,
+      "kmh": 150,
+      "brake": 0.8,
+      "steer": 0,
+      "maxBeta": 2.7531737295198595e-30,
+      "maxSlip": 0.08251587028570385,
+      "locks": 0,
+      "finalSpeed": 82.9970310019363
+    },
+    {
+      "friendly": true,
+      "kmh": 150,
+      "brake": 0.8,
+      "steer": 0.25,
+      "maxBeta": 2.4419677643877122,
+      "maxSlip": 0.07703494622548569,
+      "locks": 0,
+      "finalSpeed": 87.45229259581882
+    },
+    {
+      "friendly": true,
+      "kmh": 150,
+      "brake": 0.8,
+      "steer": 0.5,
+      "maxBeta": 5.283634681849173,
+      "maxSlip": 0.056060816721183244,
+      "locks": 0,
+      "finalSpeed": 95.39855855170131
+    },
+    {
+      "friendly": true,
+      "kmh": 150,
+      "brake": 0.9,
+      "steer": 0,
+      "maxBeta": 2.318355262936056e-30,
+      "maxSlip": 0.09302009256018078,
+      "locks": 0,
+      "finalSpeed": 76.4047407771003
+    },
+    {
+      "friendly": true,
+      "kmh": 150,
+      "brake": 0.9,
+      "steer": 0.25,
+      "maxBeta": 2.371380061620937,
+      "maxSlip": 0.08740985486491694,
+      "locks": 0,
+      "finalSpeed": 81.20487903835944
+    },
+    {
+      "friendly": true,
+      "kmh": 150,
+      "brake": 0.9,
+      "steer": 0.5,
+      "maxBeta": 4.865242398963383,
+      "maxSlip": 0.06558879468782575,
+      "locks": 0,
+      "finalSpeed": 90.15132829392431
+    },
+    {
+      "friendly": true,
+      "kmh": 150,
+      "brake": 1,
+      "steer": 0,
+      "maxBeta": 2.887798576597518e-30,
+      "maxSlip": 1.0216585703016499,
+      "locks": 118,
+      "finalSpeed": 66.58768292310417
+    },
+    {
+      "friendly": true,
+      "kmh": 150,
+      "brake": 1,
+      "steer": 0.25,
+      "maxBeta": 5.621938130251893,
+      "maxSlip": 0.9003847940220049,
+      "locks": 49,
+      "finalSpeed": 70.63574524622834
+    },
+    {
+      "friendly": true,
+      "kmh": 150,
+      "brake": 1,
+      "steer": 0.5,
+      "maxBeta": 8.388533512677988,
+      "maxSlip": 0.16729250225997264,
+      "locks": 0,
+      "finalSpeed": 78.49737265642219
+    },
+    {
+      "friendly": true,
+      "kmh": 200,
+      "brake": 0.5,
+      "steer": 0,
+      "maxBeta": 1.8895635788897155e-30,
+      "maxSlip": 0.051119309504562595,
+      "locks": 0,
+      "finalSpeed": 145.51579851540075
+    },
+    {
+      "friendly": true,
+      "kmh": 200,
+      "brake": 0.5,
+      "steer": 0.25,
+      "maxBeta": 4.690809603034978,
+      "maxSlip": 0.04400840960332314,
+      "locks": 0,
+      "finalSpeed": 149.25444443610158
+    },
+    {
+      "friendly": true,
+      "kmh": 200,
+      "brake": 0.5,
+      "steer": 0.5,
+      "maxBeta": 13.61446109823267,
+      "maxSlip": 0.030566930757591804,
+      "locks": 0,
+      "finalSpeed": 149.7846834349056
+    },
+    {
+      "friendly": true,
+      "kmh": 200,
+      "brake": 0.8,
+      "steer": 0,
+      "maxBeta": 1.5454200317619736e-30,
+      "maxSlip": 0.08244617671215929,
+      "locks": 0,
+      "finalSpeed": 121.59458104805582
+    },
+    {
+      "friendly": true,
+      "kmh": 200,
+      "brake": 0.8,
+      "steer": 0.25,
+      "maxBeta": 5.130701321930053,
+      "maxSlip": 0.07144415176261708,
+      "locks": 0,
+      "finalSpeed": 130.96520319055696
+    },
+    {
+      "friendly": true,
+      "kmh": 200,
+      "brake": 0.8,
+      "steer": 0.5,
+      "maxBeta": 10.789108431489995,
+      "maxSlip": 0.04957737897897592,
+      "locks": 0,
+      "finalSpeed": 137.82184518384335
+    },
+    {
+      "friendly": true,
+      "kmh": 200,
+      "brake": 0.9,
+      "steer": 0,
+      "maxBeta": 2.5073959850968335e-30,
+      "maxSlip": 0.09296484759467818,
+      "locks": 0,
+      "finalSpeed": 114.35707080284882
+    },
+    {
+      "friendly": true,
+      "kmh": 200,
+      "brake": 0.9,
+      "steer": 0.25,
+      "maxBeta": 5.26830081239044,
+      "maxSlip": 0.08064628123781521,
+      "locks": 0,
+      "finalSpeed": 124.98923680162744
+    },
+    {
+      "friendly": true,
+      "kmh": 200,
+      "brake": 0.9,
+      "steer": 0.5,
+      "maxBeta": 9.786769742364758,
+      "maxSlip": 0.05652405968279933,
+      "locks": 0,
+      "finalSpeed": 133.23758696069694
+    },
+    {
+      "friendly": true,
+      "kmh": 200,
+      "brake": 1,
+      "steer": 0,
+      "maxBeta": 2.9641220022419846e-30,
+      "maxSlip": 0.8247734117137833,
+      "locks": 2,
+      "finalSpeed": 105.76273512683694
+    },
+    {
+      "friendly": true,
+      "kmh": 200,
+      "brake": 1,
+      "steer": 0.25,
+      "maxBeta": 22.127275224421492,
+      "maxSlip": 0.24401438887351534,
+      "locks": 0,
+      "finalSpeed": 123.64200434156022
+    },
+    {
+      "friendly": true,
+      "kmh": 200,
+      "brake": 1,
+      "steer": 0.5,
+      "maxBeta": 25.68060425515235,
+      "maxSlip": 0.12800177705961893,
+      "locks": 0,
+      "finalSpeed": 128.74730479235632
+    },
+    {
+      "friendly": true,
+      "kmh": 300,
+      "brake": 0.5,
+      "steer": 0,
+      "maxBeta": 2.5575814597420383e-30,
+      "maxSlip": 0.03470985605583921,
+      "locks": 0,
+      "finalSpeed": 231.7652143586148
+    },
+    {
+      "friendly": true,
+      "kmh": 300,
+      "brake": 0.5,
+      "steer": 0.25,
+      "maxBeta": 15.392272881523096,
+      "maxSlip": 0.04116649931791812,
+      "locks": 0,
+      "finalSpeed": 224.43298674097164
+    },
+    {
+      "friendly": true,
+      "kmh": 300,
+      "brake": 0.5,
+      "steer": 0.5,
+      "maxBeta": 33.096352818902695,
+      "maxSlip": 0.027148098199108257,
+      "locks": 0,
+      "finalSpeed": 214.9565720200228
+    },
+    {
+      "friendly": true,
+      "kmh": 300,
+      "brake": 0.8,
+      "steer": 0,
+      "maxBeta": 2.6043901011658063e-30,
+      "maxSlip": 0.058979698462768196,
+      "locks": 0,
+      "finalSpeed": 207.23989924432252
+    },
+    {
+      "friendly": true,
+      "kmh": 300,
+      "brake": 0.8,
+      "steer": 0.25,
+      "maxBeta": 29.176587530285573,
+      "maxSlip": 0.06535745498256909,
+      "locks": 0,
+      "finalSpeed": 210.00199970263898
+    },
+    {
+      "friendly": true,
+      "kmh": 300,
+      "brake": 0.8,
+      "steer": 0.5,
+      "maxBeta": 36.01810238299204,
+      "maxSlip": 0.04532416988483544,
+      "locks": 0,
+      "finalSpeed": 207.05118132366658
+    },
+    {
+      "friendly": true,
+      "kmh": 300,
+      "brake": 0.9,
+      "steer": 0,
+      "maxBeta": 3.407136537857399e-30,
+      "maxSlip": 0.06953460381858563,
+      "locks": 0,
+      "finalSpeed": 199.04645124958594
+    },
+    {
+      "friendly": true,
+      "kmh": 300,
+      "brake": 0.9,
+      "steer": 0.25,
+      "maxBeta": 34.084149083693255,
+      "maxSlip": 0.07312695596753341,
+      "locks": 0,
+      "finalSpeed": 205.69041004403073
+    },
+    {
+      "friendly": true,
+      "kmh": 300,
+      "brake": 0.9,
+      "steer": 0.5,
+      "maxBeta": 37.051303670550695,
+      "maxSlip": 0.05141687636423138,
+      "locks": 0,
+      "finalSpeed": 204.53177570566848
+    },
+    {
+      "friendly": true,
+      "kmh": 300,
+      "brake": 1,
+      "steer": 0,
+      "maxBeta": 1.8788157322879808e-30,
+      "maxSlip": 0.08388569622345853,
+      "locks": 0,
+      "finalSpeed": 190.84435867634778
+    },
+    {
+      "friendly": true,
+      "kmh": 300,
+      "brake": 1,
+      "steer": 0.25,
+      "maxBeta": 56.31532980618481,
+      "maxSlip": 0.11773206708613818,
+      "locks": 0,
+      "finalSpeed": 192.16788889460156
+    },
+    {
+      "friendly": true,
+      "kmh": 300,
+      "brake": 1,
+      "steer": 0.5,
+      "maxBeta": 57.508033081930165,
+      "maxSlip": 0.11330072478034921,
+      "locks": 0,
+      "finalSpeed": 188.9512287840998
+    }
+  ],
+  "stops": [
+    {
+      "friendly": false,
+      "kmh": 100,
+      "seconds": 1.7499999999999962,
+      "metres": 21.214986254416825
+    },
+    {
+      "friendly": false,
+      "kmh": 200,
+      "seconds": 2.8166666666666593,
+      "metres": 66.37040336592283
+    },
+    {
+      "friendly": true,
+      "kmh": 100,
+      "seconds": 1.7916666666666627,
+      "metres": 23.18636961534658
+    },
+    {
+      "friendly": true,
+      "kmh": 200,
+      "seconds": 3.033333333333325,
+      "metres": 74.25244237824535
+    }
+  ]
+}

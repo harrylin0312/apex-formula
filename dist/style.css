@@ -54,3 +54,5 @@
 
 /* Keep a held pedal's geometry stable, and suppress native long-press gestures. */
 #touch,#touch *{touch-action:none;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}#touch button:active{transform:none}
+
+.pedals #brake::before{content:"90%";position:absolute;top:calc(10% + 6.4px);left:5px;right:5px;border-top:1px dashed #ffb49b99;color:#ffc2ab;font:8px sans-serif;text-align:right;pointer-events:none}

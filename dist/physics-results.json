@@ -14,6 +14,7 @@
     "Braking shifts load forward; left cornering loads the right wheels",
     "Rear wheelspin, front/rear loads and split-grip brake yaw emerge independently",
     "Combined braking and cornering obey each individual friction circle",
+    "Friendly 90 percent braking reduces corner-entry lockups without changing force limits",
     "Optional ABS reduces individual brake torque for a slipping wheel",
     "Fixed cockpit/nose poses have no speed, steering or yaw-rate dependence",
     "Unpowered straight-line motion dissipates total chassis and wheel energy",
@@ -158,6 +159,18 @@
         3725
       ]
     },
+    "friendlyBrake": [
+      {
+        "friendlyBrake": false,
+        "maximumBetaDegrees": 62.06450166518049,
+        "lockedWheelSamples": 123
+      },
+      {
+        "friendlyBrake": true,
+        "maximumBetaDegrees": 5.26830081239044,
+        "lockedWheelSamples": 0
+      }
+    ],
     "acceleration0to100": {
       "seconds": 2.45,
       "metres": 31.61
