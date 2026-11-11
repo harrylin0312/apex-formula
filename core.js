@@ -1,6 +1,6 @@
 export const clamp=(v,a,b)=>Math.max(a,Math.min(b,v)),lerp=(a,b,t)=>a+(b-a)*t,wrap=(v,n)=>((v%n)+n)%n,angleDiff=(a,b)=>Math.atan2(Math.sin(a-b),Math.cos(a-b));
 export const PHYSICS=Object.freeze({mass:798,gravity:9.81,lf:1.8,lr:1.6,frontTrack:1.8,rearTrack:1.8,cgHeight:.32,yawInertia:1120,wheelRadius:.36,wheelInertia:1.6,downforceCoefficient:2.6,aeroFrontBalance:.46,dragCoefficient:.68,enginePower:430000,ersPower:115000,maxDriveForce:12000,maxBrakeTorque:7400,brakeBias:.57,loadSensitivity:.08,nominalWheelLoad:2000,longitudinalStiffness:16,corneringStiffness:17,substeps:2});
-export const SURFACES=Object.freeze({asphalt:{label:'柏油',mu:1.9,minMu:1.9,rolling:.014},curb:{label:'路緣',mu:1.3,minMu:1,rolling:.025},grass:{label:'草地',mu:1,minMu:1,rolling:.12},gravel:{label:'碎石',mu:1,minMu:1,rolling:.18}});
+export const SURFACES=Object.freeze({asphalt:{label:'柏油',mu:1.9,minMu:1.9,rolling:.014},curb:{label:'路緣',mu:1.3,minMu:1,rolling:.025},grass:{label:'草地',mu:1,minMu:1,rolling:.12},gravel:{label:'碎石',mu:1.2,minMu:1,rolling:.18}});
 // Original flat circuit inspired by the stop-and-go character of Red Bull Ring.
 // Corners use tangent circular fillets, so each specified radius is retained.
 const anchors=[[0,0],[600,0],[680,120],[1150,760],[1030,820],[700,430],[570,500],[500,770],[290,760],[40,430],[-180,420],[-300,180],[-160,0]];
