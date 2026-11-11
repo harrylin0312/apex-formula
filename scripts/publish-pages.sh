@@ -7,6 +7,10 @@ cd "$project_root"
 [ -z "$(git status --porcelain)" ] || { echo '請先確認並提交工作目錄的修改。' >&2; exit 1; }
 node --check dist/core.js
 node --check dist/game.js
+node --check dist/touch-controls.js
+node --check dist/engine-audio.js
+node tests/touch-controls.test.mjs
+node tests/engine-audio.test.mjs
 node --check dist/tyre-smoke.js
 node tests/tyre-smoke.test.mjs
 node --check dist/car-model.js

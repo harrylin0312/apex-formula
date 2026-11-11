@@ -53,3 +53,5 @@ The car is now the downloaded **Formula F226** by **CarlosCG31** (CC BY 4.0), us
 Run `node tests/car-model.test.mjs` to check decompression, geometry dimensions, wheel alignment, cockpit sightline and shared resources. Model assets and decoders are self-hosted; play does not require access to Sketchfab, GitHub raw or a model CDN. Physical phone performance remains unverified.
 
 輪胎冒煙特效依各輪接地載重、抓地力使用率及滑動速度獨立觸發；鎖死、空轉與側滑會在對應輪胎接地點產生漸散煙霧。特效測試：`node tests/tyre-smoke.test.mjs`。
+
+手機控制與音效回歸檢查：`node tests/touch-controls.test.mjs`、`node tests/engine-audio.test.mjs`。已用 Chromium 真實多指事件驗證同時轉向／油門／煞車／ERS、額外手指、獨立放開、跨區拖曳、觸控取消與旋轉重設；Web Audio 解鎖、暫停後恢復、靜音及離線音訊輸出亦通過。實體 iPhone／Safari 音訊中斷與多點觸控仍待實機確認。引擎聲為程序合成，非 F1 實車錄音。
