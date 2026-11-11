@@ -51,3 +51,5 @@ The car is now the downloaded **Formula F226** by **CarlosCG31** (CC BY 4.0), us
 `dist/car-model.js` loads bundled glTF/Meshopt tools, expands quantized attributes, corrects mirrored winding, shares merged static geometry, aligns four independently animated wheels to physical contacts, applies APEX paint/decals and supplies fixed camera mounts. The physics core and parameters are unchanged. The cockpit eye is fitted to the downloaded model; the vehicle model does not define collision geometry or grip.
 
 Run `node tests/car-model.test.mjs` to check decompression, geometry dimensions, wheel alignment, cockpit sightline and shared resources. Model assets and decoders are self-hosted; play does not require access to Sketchfab, GitHub raw or a model CDN. Physical phone performance remains unverified.
+
+輪胎冒煙特效依各輪接地載重、抓地力使用率及滑動速度獨立觸發；鎖死、空轉與側滑會在對應輪胎接地點產生漸散煙霧。特效測試：`node tests/tyre-smoke.test.mjs`。
