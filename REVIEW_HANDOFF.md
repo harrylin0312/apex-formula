@@ -1,5 +1,9 @@
 # 給下一個對話的檢查交接
 
+## 低速彎研究（2026-11-12）
+
+見 LOW_SPEED_CORNER_STUDY.md、tests/low-speed-corners.test.mjs 與 research/low-speed-corner-validation.json。7754f35 原參數，玩家預設友善煞車開／ABS關；六個最緊彎均通過50／60／70 km/h，T3 18m 80km/h 明顯推寬、90失敗。含六組150／200km/h提前120m煞入T3測試。只有工程控制器驗證，不是實機手動或真實F1幾何複製。本次未改遊戲參數。
+
 ## 友善煞車（brake-v1）
 
 預設開啟、可關閉。input.friendlyBrake 每輪依真實 C/Fy/Fz 調節煞車扭矩，前 90% 保守，最後 10% 保留超限風險；不改原輪胎力模型。S／↓ 在友善模式最多 90%，Shift 可到 100%。詳細推導、限制、研究來源與測試見 PHYSICS_REPORT.md 的友善煞車章節及 tests/friendly-brake.test.mjs。22 項物理測試，原始模式回歸仍保留。

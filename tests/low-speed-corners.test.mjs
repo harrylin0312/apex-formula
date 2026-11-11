@@ -1,0 +1,19 @@
+import * as m from '../dist/core.js';
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const runs=[];
+for(const corner of m.CORNERS.filter(c=>c.radius<=28.01))for(const targetKmh of [50,60,70,80,90,100]){
+const midpoint=m.nearest(corner.x,corner.z).d,half=corner.radius*corner.angle/2,start=midpoint-half-20,end=midpoint+half+20;
+let c=m.createCar(start);m.setVelocity(c,targetKmh/3.6);let min=Infinity,max=0,offset=0,overallOffset=0,beta=0,off=false,arcSamples=0,done=false;
+for(let i=0;i<2400;i++){const ctrl=m.aiControls(c);const err=targetKmh/3.6-c.speed;ctrl.gas=m.clamp(err*.4+.08,0,1);ctrl.brake=m.clamp(-err*.25,0,.9);ctrl.friendlyBrake=true;m.drive(c,ctrl,1/120,false);overallOffset=Math.max(overallOffset,c.near.dist);off ||=c.wheels.some(w=>!['asphalt','curb'].includes(w.surface));for(const w of c.wheels)assert(Math.hypot(w.fx,w.fy)<=w.capacity+1e-6);
+if(c.distance>=midpoint-half&&c.distance<=midpoint+half){arcSamples++;min=Math.min(min,c.speed*3.6);max=Math.max(max,c.speed*3.6);offset=Math.max(offset,c.near.dist);const u=c.vx*Math.sin(c.a)+c.vz*Math.cos(c.a),v=c.vx*Math.cos(c.a)-c.vz*Math.sin(c.a);beta=Math.max(beta,Math.abs(Math.atan2(v,u))*180/Math.PI);off ||=c.wheels.some(w=>!['asphalt','curb'].includes(w.surface));}
+if(c.distance>=end){done=true;break;}if(c.offTime>1||c.wallHit)break;}
+runs.push({corner:corner.number,radius:corner.radius,targetKmh,minKmh:min,maxKmh:max,maxOffset:offset,overallMaxOffset:overallOffset,maxBeta:beta,off,done,arcSamples,comfortable:done&&!off&&arcSamples>3&&min>=targetKmh*.9&&max<=targetKmh*1.1&&beta<5,pass:done&&!off&&arcSamples>3&&min>=targetKmh*.9&&max<=targetKmh*1.1});}
+assert.equal(runs.filter(r=>r.targetKmh<=70&&r.pass).length,18);
+assert(runs.some(r=>r.corner===3&&r.targetKmh===90&&!r.pass));
+const approaches=[];
+for(const initialKmh of [150,200])for(const targetKmh of [60,70,80]){const corner=m.CORNERS.find(c=>c.number===3),mid=m.nearest(corner.x,corner.z).d,half=corner.radius*corner.angle/2,start=mid-half-120,end=mid+half+20;let c=m.createCar(start);m.setVelocity(c,initialKmh/3.6);let min=Infinity,max=0,beta=0,off=false,done=false;for(let i=0;i<3600;i++){const ctrl=m.aiControls(c),err=targetKmh/3.6-c.speed;ctrl.gas=m.clamp(err*.4+.08,0,1);ctrl.brake=m.clamp(-err*.25,0,.9);ctrl.friendlyBrake=true;m.drive(c,ctrl,1/120,false);off ||=c.wheels.some(w=>!['asphalt','curb'].includes(w.surface));if(c.distance>=mid-half&&c.distance<=mid+half){min=Math.min(min,c.speed*3.6);max=Math.max(max,c.speed*3.6);const u=c.vx*Math.sin(c.a)+c.vz*Math.cos(c.a),v=c.vx*Math.cos(c.a)-c.vz*Math.sin(c.a);beta=Math.max(beta,Math.abs(Math.atan2(v,u))*180/Math.PI);}if(c.distance>=end){done=true;break;}if(c.offTime>1||c.wallHit)break;}approaches.push({corner:3,initialKmh,targetKmh,brakingApproachMetres:120,minKmh:min,maxKmh:max,maxBeta:beta,off,done,pass:done&&!off&&min>=targetKmh*.9&&max<=targetKmh*1.1});}
+assert(approaches.filter(r=>r.targetKmh<=70).every(r=>r.pass));
+const steeringGeometry=[50,60,70,80,90,100].map(kmh=>({kmh,centralDegrees:m.steeringLimit(kmh/3.6)*180/Math.PI,noSlipMinimumRadius:(m.PHYSICS.lf+m.PHYSICS.lr)/Math.tan(m.steeringLimit(kmh/3.6))}));
+const result={pass:true,testedSource:'7754f35',conditions:'Actual circuit; initial speed set once; thereafter forces integrated without teleporting or forcing speed/yaw. AI steering plus proportional target speed controller; friendly brake enabled, ABS/TCS disabled (default player settings). Targets are test conditions, not measured F1 limits. Pass: finish 20m beyond arc with no grass/gravel throughout and arc speed within +/-10% of target. Comfortable additionally requires max body beta <5 degrees (engineering heuristic).',runs,approaches,steeringGeometry};console.log(JSON.stringify(result,null,2));
+if(process.argv.includes('--save'))fs.writeFileSync(new URL('../research/low-speed-corner-validation.json',import.meta.url),JSON.stringify(result,null,2)+'\n');
